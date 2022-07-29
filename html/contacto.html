@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>POCO BANDA</title>
+    <link rel="stylesheet" href="../style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet">
+</head>
+
+<body>
+    <header class="header">
+        <a href="index.html" class="imagen-logo-header"><img src="../imagenes/logopoco.jpg" alt="imagen del logo de poco banda"> </a>
+
+        <nav>
+            <ul class="header-menu">
+                <li><a href="../index.html">INICIO</a></li>
+                <li><a href="../html/integrantes.html">INTEGRANTES</a></li>
+                <li><a href="../html/discografia.html" >DISCOGRAFÍA</a></li>
+                <li><a href="../html/galeria.html">GALERIA</a></li>
+                <li><a href="../html/contacto.html" >CONTACTO</a></li>
+            </ul>
+         </nav>
+     </header>
+     <main>
+        <!--FORMULARIO DE CONTACTO-->
+        <form action="" method="">
+
+            <!--DATOS PERSONALES-->
+            
+            <fieldset>
+                <legend>DATOS PERSONALES</legend>
+                <!--NOMBRE-->
+                <label for="nombre_contacto">Nombre:</label>
+                <input type="text" id="nombre_contacto">
+                <!--APELLIDO-->
+                <label for="apellido_contacto">Apellido:</label>
+                <input type="text" id="apellido_contacto">
+                <!--EMAIL-->
+                <label for="email_contacto">E-mail:</label>
+                <input type="text" id="email_contacto">
+                <!--GENERO-->
+                <label for="genero">Seleccione el genero:</label>
+                <select name="genero">
+                    <option value="varon">Varon</option>
+                    <option value="mujer">Mujer</option>
+                    <option value="otro">Otro</option>            
+                </select>
+             </fieldset>
+             <!--CUENTANOS-->
+             <Fieldset>
+                <legend>CUENTANOS!</legend>
+             <!--RECIBIR NOVEDADES-->   
+                <label for="acepto_novedades">¿Deseas recibir novedades?</label>
+                <input type="checkbox" id="acepto_novedades">
+             <!--ENVIAR COMENTARIOS-->     
+                <label for="dejatucomentario">¿Queres contarnos algo?</label>
+                <textarea  name="" id="dejatucomentario" cols="50" rows="25"> </textarea>
+            </Fieldset>
+          <input type="submit" value="Enviar Formulario">
+          <input type="reset" value="Limpiar Formulario">
+         </form>
+
+     </main>
+
+        
+     <footer class="footer">
+
+        <p class="parrafo-footer" >Todos los derechos reservados <a href="https://pocoband.com/" target="_blank"> POCO BAND </a>.</p>
+
+
+        <div class="redes-footer">
+            <p>Mantente conectado:</p>
+
+        <!--ENLACE FACEBOOK-->
+            <a href="https://www.facebook.com/Poco2013" target="_blank"><img src="../imagenes/logoface.jpg" alt="imagen del logo de facebook"> </a>
+        <!--ENLACE TWITTER-->
+            <a href="https://twitter.com/pocorocks" target="_blank"><img src="../imagenes/logotwitter.jpg" alt="imagen del logo de twitter"> </a>
+        <!--ENLACE INSTAGRAM-->
+            <a href="https://www.instagram.com/officialpocoband/?hl=es" target="_blank"><img src="../imagenes/logotinstagram.jpg" alt="imagen del logo de instagram"> </a>
+        </div>
+        
+     </footer>
+    </body>
+    </html>
