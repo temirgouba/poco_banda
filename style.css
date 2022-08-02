@@ -2,147 +2,385 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+    list-style: none;
 }
 
 body{
     font-family: 'Roboto', sans-serif;
 }
 
-.header{
-    display: flex;
-}
-
-/*  GALERIA*/
-.main_galeria{
-    display: grid;
-}
-
-
-
-/*  FIN galeria*/
-
-@media only screen and (max-width:600px){
-
-    /* INICIO GALERIA*/
-    .main_galeria{
-        background-color: rgba(202, 116, 66, 0.658);
-        grid-template-rows:250px 250px 250px 250px 250px 250px 250px 250px 250px;
-        grid-template-columns: 90%;
-        grid-template-areas: "foto1"
-                             "foto2"
-                             "foto3"
-                             "foto4"
-                             "foto5"
-                             "foto6"
-                             "foto6"
-                             "foto7"
-                             "foto8"
-                             "foto9";
-        column-gap: 10%px;
-        row-gap: 30px; 
-        padding: 5% 5%;  
-}
-.main_galeria img{
-    width: 100%;
-    height: 100%;
-}
-
-}
-
-@media only screen and (min-width:600px){
-
-    /* INICIO HEADER*/
-
-.header{
-    justify-content: space-around;
-    align-items: center;
-    background-color: white;
-    border-bottom: 1px solid gray;
-    position: sticky;
-    top: 0px;
-    min-height: 100px;
-    width: 100%;
-}
-
-
-    /* MENU */
-.header-menu{
-    list-style-type: none;
-}
-
-
-.imagen-logo-header{
-    width: 25%;
-}
-.imagen-logo-header img{
-    height: 100%;
-    width: 100%;
-}
-
-.header-menu li{
-    display: inline-block;
-    margin: 0px 10px;   
-}
-
 a{
     text-decoration: none;
-    font-family: 'Roboto', sans-serif;
-    font-weight: 800;
-    color:black;   
 }
 
-   
-}
-    /*  FIN MENU */
-/* FIN HEADER*/
+.header{
+    width: 100%;
+    background-color: white;
+    border-bottom: 1px solid black;
+    position: sticky;
+    top:0px;
 
-    /* INICIO GALERIA*/
-
-    .main_galeria{
-        background-color: rgba(202, 116, 66, 0.658);
-        grid-template-rows:200px 200px 200px;
-        grid-template-columns: 30% 30% 30%;
-        grid-template-areas: "foto1" "foto2" "foto3"
-                             "foto4" "foto5" "foto6"
-                             "foto7" "foto8" "foto9";
-        column-gap: 10px;
-        row-gap: 10px;                        
-        padding: 5% 5%;                  
-    }
-    .main_galeria img{
-        width: 100%;
-        height: 100%;
-    }
-
-    /* FIN GALERIA*/
-  
-    
-
-
-
-
-
-/* INICIO MAIN*/
-
-.main{
-    background-color: rgba(202, 116, 66, 0.658);
-    padding-bottom: 5rem;
 }
 
-
-    /* INICIO TRIBUTO*/
+main{
+    width: 100%;
+    background-color: rgb(221, 149, 123);
+}
 
 .disco-tributo{
     display: flex;
-    align-items: center;
-    justify-content: space-evenly;
+}
+
+.fecha-recital{display: flex;}
+
+.footer{
+    width: 100%;
+    background-color: black;
+    display: flex;
+}
+
+.parrafo-footer{
+    color: white;
+}
+
+.redes-footer p{
+    color: white;
+}
+
+
+
+
+@media only screen and (max-width:768px){
+
+/*HEADER*/
+
+    .header{
+        height: 80px;
+        z-index: 2;
+    }
+
+    .enlace_logo{
+        position: absolute;
+        padding: 10px 10px;
+    }
+
+    .logo{
+        height: 60px;
+    }
+
+    .nav_header ul{
+        position: fixed;
+        width: 100%;
+        height: 100vh;
+        background: rgb(212, 224, 245);
+        top:80px;
+        left: -100%;
+        text-align: center;
+        transition: all .5s;
+    }
+
+    .nav_header ul li{
+        display: block;
+        margin: 50px;
+        line-height: 30px;
+
+    }
+
+    .nav_header ul li a{
+        font-family: 'Roboto', sans-serif;
+        font-weight: 800;
+        color:black;
+        font-size: 15px;
+        border-radius: 3px;
+    }
+
+    .nav_header a.active, .nav_header li a:hover{
+        background-color: rgba(0, 0, 0, 0.473);
+        transition: .5s;
+    }
+
+    .checkbtn{
+        display: block;
+        font-size: 30px;
+        color: black;
+        cursor: pointer;
+        line-height: 80px;
+        float: right;
+        margin-right: 60px;
+    }
+
+    #check:checked ~ ul{
+        left:0;
+    }
+
+    #check{
+        display: none;
+    }
+
+   
+
+/*MAIN*/
+
+    .main{
+        padding: 10px 10px 10px 10px;
+    }
+
+/*DISCO TRIBUTO*/
+
+    .disco-tributo{
+        height: 850px;
+        flex-direction: column-reverse;
+        justify-content: space-around;
+        align-items: center;
+    }
+
+    .imagen-tributo{
+        padding: 10px 0px 20px 0px;
+        width: 95%;
+        height: 70%;
+    }
+
+    .contenido-tributo{
+        font-size: 16px;
+        color: black;
+        text-align: center;
+    }
+
+    .contenido-tributo h2{
+        margin-bottom: 1.5rem;
+        font-size: 1.5rem;
+        text-align: center;
+    }
+
+    .contenido-tributo p{
+        margin-top: 1.5rem;
+        margin-bottom: 30px;
+        font-size: 1rem;
+        text-align: justify;
+    }
+
+    .enlace_boton{
+        padding: 10px;
+        background-color: rgb(129, 129, 247);
+        color:wheat;
+        border-radius: 5px;
+    }
+
+
+
+
+
+
+/*DISCO FECHA RECITAL*/
+
+.fecha-recital{
     height: 500px;
-    padding: 0em 5rem;
-    box-shadow: rgba(50, 50, 93, 0.25) 0px 50px 100px -20px, rgba(0, 0, 0, 0.3) 0px 30px 60px -30px, rgba(10, 37, 64, 0.35) 0px -2px 6px 0px inset;
+    flex-direction: column-reverse;
+    justify-content: space-around;
+    align-items: center;
+    margin-top: 70px;
+}
+
+.imagen-recital{
+    padding: 10px 0px 20px 0px;
+    width: 95%;
+    height: 70%;
+}
+
+.contenido-fecha{
+    font-size: 16px;
+    color: black;
+    text-align: center;
+}
+
+.contenido-fecha h2{
+    margin-bottom: 1rem;
+    font-size: 1.5rem;
+}
+
+.contenido-fecha p{
+    margin-bottom: 30px;
+    font-size: 1rem;
+}
+
+/*VIDEO DE YOU TUBE*/
+
+.video-youtube{
+    height: 100%;
+    width: 100%;
+}
+
+.contenedor-video-youtube{
+    height: 400px;
+    width: 90%;
+    margin: 50px 10px 30px 30px;
+}
+
+/*INTEGRANTES*/
+
+.main_integrantes{
+    width: 100%;
+    height: 2000px;
+}
+
+.main_integrantes h1{
+    text-align: center;
+    font-size: 1 rem;
+    padding: 25px 5px;
+}
+
+.card_integrante{
+    width: 100%;
+    height: 300px;
+    display: flex;
+    justify-content: center;
+    z-index: 1;
+}
+
+.card_integrante a{
+    color: black;
+    text-align: center;
+}
+
+.card_integrante a h3{
+    font-size: 0.9rem;
+    padding: 5px;
+}
+
+.card_integrante img{
+    height: 80%;
+}
+
+/*BIOGRAFIA INTEGRANTES*/
+
+.biografia_integrante h2 {
+
+    margin: 50px 5px 10px 5px;
+    font-size: 1rem;
+    text-align: center;
+    font-weight: 600;
+
+}
+
+.biografia_integrante p {
+
+    margin: 30px 5px;
+    font-size: 0.9rem;
+    text-align: justify;
+
+}
+
+
+
+
+
+/*FOOTER*/
+
+    .footer{
+        height: 80px;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+    }
+
+    .parrafo-footer{
+        font-size: 10px;
+    }
+
+    .redes-footer p{
+        display: inline-block;
+        font-size: 16px;
+    }
+
+    .redes-footer a{
+        font-size: 25px;
+    }
+    .redes-footer i{
+        margin: 0px 3px;
+    }
+
+   
+
+
+    
+
+}
+
+@media only screen and (min-width:768px){
+
+/*HEADER*/
+
+    .header{
+        height: 150px;
+        z-index: 1;
+    }
+
+    .enlace_logo{
+        position: absolute;
+        padding: 30px 30px;
+    }
+
+    .logo{
+        height: 90px;
+    }
+
+    .nav_header ul{
+        float:right;
+        margin-right: 15px;
+    }
+
+    .nav_header ul li{
+        display: inline-block;
+        line-height: 150px;
+        margin: 0 5px;
+    }
+
+    .nav_header ul li a{
+        font-family: 'Roboto', sans-serif;
+        font-weight: 800;
+        color:black;
+        font-size: 13px;
+        padding: 7px 3px;
+        border-radius: 3px;
+    }
+
+    .nav_header a.active, .nav_header li a:hover{
+        background-color: rgba(0, 0, 0, 0.473);
+        transition: .5s;
+    }
+
+    .checkbtn{     
+        display: none;
+    }
+
+    #check{
+        display: none;
+    }
+
+/*MAIN*/
+
+main{
+    width: 100%;
+    height: 1600px;
+    background-color: rgb(221, 149, 123);
+    }
+
+/*DISCO TRIBUTO*/
+
+.disco-tributo{
+    height: 600px;
+    width: 100%;
+    justify-content: space-evenly;
+    align-items: center;
+    padding: 0em 1em;
+}
+
+.imagen-tributo{
+    width: 40%;
+
 }
 
 .contenido-tributo{
-    font-family: 'Roboto', sans-serif;
     font-size: 1rem;
     color: black;
     text-align: center;
@@ -150,114 +388,346 @@ a{
 }
 
 .contenido-tributo h2{
-    margin-bottom: 1rem;
-    font-size: 2rem;
+
 }
 
 .contenido-tributo p{
-    margin-bottom: 4rem;
+    text-align: justify;
+    padding-top: 1em;
+
 }
 
-.imagen-tributo{
-    width: 30%;
+.enlace_boton{
+    padding: 10px;
+    background-color: rgb(129, 129, 247);
+    color:wheat;
+    border-radius: 5px;
 }
 
-/* FIN TRIBUTO*/
 
-    /* INICIO FECHA RECITAL*/
-    
-    .fecha-recital{
-        display: flex;
-        align-items: center;
-        justify-content: space-evenly;
-        height: 500px;
-        padding: 0em 5rem;
-        box-shadow: rgba(50, 50, 93, 0.25) 0px 50px 100px -20px, rgba(0, 0, 0, 0.3) 0px 30px 60px -30px, rgba(10, 37, 64, 0.35) 0px -2px 6px 0px inset;
-    }
 
-    .contenido-fecha-recital{
-        font-family: 'Roboto', sans-serif;
-        font-size: 1rem;
-        color: black;
-        text-align: center;
-        width: 45%;
-    }
+/*DISCO FECHA RECITAL*/
 
-    .contenido-fecha-recital h2{
-        margin-bottom: 1rem;
-        font-size: 2rem;
-    }
-
-    .contenido-fecha-recital p{
-        margin-bottom: 4rem;
-    }
-
-    .imagen-fecha-recital{
-        width: 50%;
-    }
-    
-   /* FIN FECHA RECITAL*/
-
-        /* INICIO CONTENIDO YOU TUBE*/
-
-   .contenedor-video-youtube{
-    display: flex;
-    align-content: center;
-    justify-content: center;
-   }
-
-   .video-youtube{
-    height: 200;
-    width: 150;
-    margin-top: 5rem;
-   }
-
-    /* FIN CONTENIDO YOU TUBE*/
-
-/* FIN MAIN*/
-
-/* INICIO FOOTER*/
-
-.footer{
-    background-color: black;
-    color: white;
-    border-bottom: 1px solid gray;
-    display: flex;
-    height: 100px;
-    align-items: center;
+.fecha-recital{
+    height: 500px;
+    width: 100%;
     justify-content: space-around;
-    padding: 0em 5rem;  
+    align-items: center;
+    flex-direction: row-reverse;
 }
 
-.parrafo-footer{
-    font-size: o,5rem;
-    width: 50%;
-    height: 50%;
-    margin-top: 3rem;
-    margin-bottom: 1rem;
+.imagen-recital{
+    width: 40%;
+
 }
 
-.parrafo-footer a{
-    text-decoration: none;
-    color: white;
+.contenido-fecha{
+    font-size: 1rem;
+    color: black;
+    text-align: center;
+    width: 45%
+}
+
+.contenido-fecha h2{
+
+}
+
+.contenido-fecha p{
+    text-align: justify;
+    padding-top: 1em;
+}
+
+/*VIDEO DE YOU TUBE*/
+
+.video-youtube{
+height: 100%;
+width: 100%;
+}
+
+.contenedor-video-youtube{
+height: 400px;
+width: 90%;
+margin: 50px 10px 30px 30px;
+}
+
+/*INTEGRANTES*/
+
+.main_integrantes{
+    width: 100%;
+    height: 2000px;
+}
+
+.main_integrantes h1{
+    text-align: center;
+    font-size: 1.2 rem;
+    padding: 45px 10px;
+}
+
+.contenedor_cards{
+    display: flex;
+    height: 350px;
+    width: 100%;
+    z-index: 1;
+}
+
+.card_integrante{
+    width: 100%;
+    height: 300px;
+    display: flex;
+    justify-content: center;
+
+    
+}
+
+.card_integrante a{
+    color: black;
     text-align: center;
 }
 
-.redes-footer{
-    width: 50%;
-    height: 50%;
-    margin-top: 1rem;
-    margin-bottom: 1rem;
+.card_integrante a h3{
+    font-size: 1rem;
+    padding: 5px;
+}
+
+.card_integrante img{
+    height: 80%;
+}
+
+/*BIOGRAFIA INTEGRANTES*/
+
+.biografia_integrante h2 {
+
+    margin: 50px 5px 10px 5px;
+    font-size: 1.1rem;
+    text-align: center;
+    font-weight: 600;
+
+}
+
+.biografia_integrante p {
+
+    margin: 30px 30px;
+    font-size: 1rem;
+    text-align: justify;
+
+}
+
+
+
+/*FOOTER*/
+
+.footer{
+    height: 100px;
+    align-items: center;
+    justify-content: center;
+    flex-direction: row-reverse;
+}
+
+.parrafo-footer{
+    font-size: 14px;
+    margin: 10px 10px;
 }
 
 .redes-footer p{
     display: inline-block;
-    font-size: 2rem;
-}
-
-.redes-footer img{
-    width: 30px;
-    height: 30px;
+    font-size: 24px;
     margin-left: 10px;
 }
-/* FIN FOOTER*/
+
+.redes-footer a{
+    font-size: 30px;
+}
+.redes-footer i{
+    margin: 0px 5px;
+}
+
+
+ 
+}
+
+
+@media only screen and (min-width:1200px){
+
+/*HEADER*/
+    .header{
+        height: 150px;
+        z-index: 1;
+    }
+
+    .enlace_logo{
+        position: absolute;
+        padding: 30px 30px;
+    }
+
+    .logo{
+        height: 90px;
+    }
+
+    .nav_header ul{
+        float:right;
+        margin-right: 15px;
+    }
+
+    .nav_header ul li{
+        display: inline-block;
+        line-height: 150px;
+        margin: 0 5px;
+    }
+
+    .nav_header ul li a{
+        font-family: 'Roboto', sans-serif;
+        font-weight: 800;
+        color:black;
+        font-size: 20px;
+        padding: 7px 7px;
+        border-radius: 3px;
+    }
+
+    .nav_header a.active, .nav_header li a:hover{
+        background-color: rgba(0, 0, 0, 0.473);
+        transition: .5s;
+    }
+
+    .checkbtn{     
+        display: none;
+    }
+
+    #check{
+        display: none;
+    }
+
+/*MAIN*/
+
+main{
+    width: 100%;
+    height: 1800px;
+    background-color: rgb(221, 149, 123);
+    }
+
+/*DISCO TRIBUTO*/
+
+    .disco-tributo{
+        height: 600px;
+
+    }
+    
+    .imagen-tributo{
+        width: 45%;
+    
+    }
+    
+    .contenido-tributo{
+        font-size: 1.2rem;
+        width: 42%;
+    }
+    
+
+    
+    
+    
+    /*DISCO FECHA RECITAL*/
+    
+    .fecha-recital{
+        height: 500px;
+        width: 100%;
+    }
+    
+    .imagen-recital{
+        width: 42%;
+    
+    }
+    
+    .contenido-fecha{
+        font-size: 1.2rem;
+        width: 45%
+    }
+
+/*VIDEO DE YOU TUBE*/
+
+.video-youtube{
+    height: 100%;
+    width: 100%;
+    }
+    
+    .contenedor-video-youtube{
+    height: 600px;
+    width: 95%;
+    }
+    
+/*INTEGRANTES*/
+
+
+.main_integrantes h1{
+    font-size: 50px;
+    padding: 55px 20px;
+    font-weight: 500;
+}
+
+.contenedor_cards{
+    height: 450px;
+}
+
+.card_integrante{
+    width: 100%;
+    height: 400px;   
+}
+
+
+.card_integrante a h3{
+    font-size: 30px;
+    padding: 10px;
+}
+
+.card_integrante img{
+    height: 90%;
+}
+
+/*BIOGRAFIA INTEGRANTES*/
+
+.biografia_integrante h2 {
+
+    margin: 50px 5px 10px 5px;
+    font-size: 40px;
+}
+
+.biografia_integrante p {
+
+    margin: 40px 40px;
+    font-size: 30px;
+}
+    
+
+
+
+ 
+/*FOOTER*/
+
+.footer{
+    height: 120px;
+    align-items: center;
+    justify-content: center;
+    flex-direction: row-reverse;
+}
+
+.parrafo-footer{
+    font-size: 18px;
+    margin: 10px 10px 10px 20px
+}
+
+.redes-footer p{
+    display: inline-block;
+    font-size: 28px;
+    margin-left: 15px;
+}
+
+.redes-footer a{
+    font-size: 40px;
+}
+.redes-footer i{
+    margin: 0px 8px;
+}
+
+
+
+
+}
