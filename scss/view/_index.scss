@@ -1,0 +1,237 @@
+.main{
+    width: 100%;
+    background-color: $color-fondo-body;
+}
+
+/*DISCO TRIBUTO*/
+
+
+.disco-tributo{
+    display: flex;
+    align-items: center;
+}
+
+.contenido-tributo{
+    color: black;
+    text-align: center;
+}
+
+.contenido-tributo p{
+    text-align: justify;
+}
+
+.enlace_boton{
+    padding: 10px;
+    background-color: rgb(129, 129, 247);
+    color:wheat;
+    border-radius: 5px;
+}
+
+/*DISCO FECHA RECITAL*/
+
+.fecha-recital{
+    display: flex;
+    height: 500px;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.contenido-fecha{
+    color: black;
+    text-align: center;
+}
+
+.contenido-fecha h2{
+    margin-bottom: 1rem;
+    font-size: 1.5rem;
+}
+
+/*VIDEO DE YOU TUBE*/
+
+.video-youtube{
+    height: 100%;
+    width: 100%;
+}
+
+.contenedor-video-youtube{
+    height: 400px;
+    width: 90%;
+    margin: 50px 10px 30px 30px;
+}
+
+@media only screen and (max-width:768px){
+
+    /*MAIN*/
+
+    .main{
+        padding: 10px 10px 10px 10px;
+    }
+
+/*DISCO TRIBUTO*/
+
+    .disco-tributo{
+        height: 850px;
+        flex-direction: column-reverse;
+        justify-content: space-around;
+    }
+
+    .imagen-tributo{
+        padding: 10px 0px 20px 0px;
+        width: 95%;
+        height: 70%;
+    }
+
+    .contenido-tributo{
+        font-size: 16px;
+    }
+
+    .contenido-tributo h2{
+        margin-bottom: 1.5rem;
+        font-size: 1.5rem;
+        text-align: center;
+    }
+
+    .contenido-tributo p{
+        margin-top: 1.5rem;
+        margin-bottom: 30px;
+        font-size: 1rem;
+    }
+
+/*DISCO FECHA RECITAL*/
+
+.fecha-recital{
+    flex-direction: column-reverse;
+    margin-top: 70px;
+}
+
+.imagen-recital{
+    padding: 10px 0px 20px 0px;
+    width: 95%;
+    height: 70%;
+}
+
+.contenido-fecha{
+    font-size: 16px;
+}
+
+
+
+.contenido-fecha p{
+    margin-bottom: 30px;
+    font-size: 1rem;
+}
+
+
+}
+
+@media only screen and (min-width:768px){
+
+    /*MAIN*/
+
+.main{
+    width: 100%;
+    height: 1600px;
+    background-color: $color-fondo-body;
+    }
+
+/*DISCO TRIBUTO*/
+
+.disco-tributo{
+    height: 600px;
+    width: 100%;
+    justify-content: space-evenly;
+    padding: 0em 1em;
+}
+
+.imagen-tributo{
+    width: 40%;
+
+}
+
+.contenido-tributo{
+    font-size: 1rem;
+    width: 45%;
+}
+
+
+.contenido-tributo p{
+    padding-top: 1em;
+
+}
+
+/*DISCO FECHA RECITAL*/
+
+.fecha-recital{
+    width: 100%;
+    flex-direction: row-reverse;
+}
+
+.imagen-recital{
+    width: 40%;
+
+}
+
+.contenido-fecha{
+    font-size: 1rem;
+    width: 45%
+}
+
+.contenido-fecha p{
+    text-align: justify;
+    padding-top: 1em;
+}
+
+}
+
+@media only screen and (min-width:1200px){
+
+    /*MAIN*/
+
+.main{
+    height: 1800px;
+    }
+
+/*DISCO TRIBUTO*/
+
+    .disco-tributo{
+        height: 600px;
+
+    }
+    
+    .imagen-tributo{
+        width: 45%;
+    
+    }
+    
+    .contenido-tributo{
+        font-size: 1.2rem;
+        width: 42%;
+    }
+ 
+  
+    /*DISCO FECHA RECITAL*/
+        
+    .imagen-recital{
+        width: 42%;
+    
+    }
+    
+    .contenido-fecha{
+        font-size: 1.2rem;
+        width: 45%
+    }
+
+/*VIDEO DE YOU TUBE*/
+
+.video-youtube{
+    height: 100%;
+    width: 100%;
+    }
+    
+    .contenedor-video-youtube{
+    height: 600px;
+    width: 95%;
+    }
+
+}
+

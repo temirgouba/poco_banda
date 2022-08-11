@@ -1,0 +1,101 @@
+.footer{
+    width: 100%;
+    background-color: $color-fondo-footer;
+    display: flex;
+    flex-direction: column;
+}
+
+.footer__contenedor{
+    display: flex;
+    align-items: center;
+}
+
+.footer__contenedor p{
+    color: white;
+    display: inline-block;
+}
+
+.footer__desarrolladores{
+    border-top: 0.2px solid white;
+    text-align: center;
+}
+
+.footer__desarrolladores p{
+    color: rgb(233, 175, 98);
+    margin: 5px;
+}
+
+@media only screen and (max-width:768px){
+
+.footer{
+    height: 150px;
+    align-items: center;
+    justify-content: center;
+}
+
+.footer__contenedor{
+    width: 100%;
+    flex-direction: column;
+    display: flex;
+}
+
+.footer__contenedor p{
+    font-size: 14px;
+    margin: 0px;
+    padding-bottom: 10px;
+}
+
+.footer__contenedor__redes i{
+    font-size: 20px;
+}
+
+.footer__desarrolladores p{
+    font-size: 10px;
+}
+
+}
+
+@media only screen and (min-width:768px){
+
+.footer{ 
+    height: 140px;
+}
+
+.footer__contenedor{
+    flex-direction: row;
+    justify-content: space-around;
+    height: 70%;
+}
+
+.footer__contenedor p{
+    font-size: 16px;
+    padding-top: 10px;
+}
+
+.footer__contenedor__redes i{
+    font-size: 25px;
+    padding-left: 10px;
+}
+
+.footer__desarrolladores p{
+    font-size: 12px;
+}
+
+}
+
+@media only screen and (min-width:1200px){
+
+.footer__contenedor p{
+    font-size: 18px;
+}
+
+.footer__contenedor__redes i{
+    font-size: 27px;
+    padding-left: 12px;
+}
+ 
+.footer__desarrolladores p{
+    font-size: 12px;
+}
+    
+}
