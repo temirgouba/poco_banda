@@ -29,12 +29,6 @@ a {
 .contenido-tributo p {
   text-align: justify; }
 
-.enlace_boton {
-  padding: 10px;
-  background-color: #8181f7;
-  color: wheat;
-  border-radius: 5px; }
-
 /*DISCO FECHA RECITAL*/
 .fecha-recital {
   display: flex;
@@ -157,27 +151,21 @@ a {
 
 .main_integrantes {
   width: 100%;
-  height: 2000px;
   background-color: #dd957b; }
+  .main_integrantes h1 {
+    text-align: center; }
 
-.main_integrantes h1 {
-  text-align: center; }
-
-.card_integrante {
-  width: 100%;
-  height: 300px;
-  display: flex;
-  justify-content: center; }
-
-.card_integrante a {
+.card_integrante_tom a {
   color: black;
-  text-align: center; }
+  background: white; }
 
-.card_integrante a h3 {
-  padding: 5px; }
+.card_integrante_rick a {
+  color: #ad0e0e;
+  background: #aaaaa5; }
 
-.card_integrante img {
-  height: 80%; }
+.card_integrante_jack a {
+  color: white;
+  background: black; }
 
 .enlace_interno_integrantes {
   position: relative; }
@@ -229,67 +217,69 @@ a {
   100% {
     transform: translate(0px, 0px); } }
 
-/*BIOGRAFIA INTEGRANTES*/
-.biografia_integrante h2 {
-  margin: 50px 5px 10px 5px;
-  text-align: center;
-  font-weight: 600; }
-
-.biografia_integrante p {
-  font-size: 0.9rem;
-  text-align: justify; }
-
 @media only screen and (max-width: 768px) {
-  .main_integrantes h1 {
-    font-size: 1 rem;
-    padding: 25px 5px; }
-  .card_integrante {
-    z-index: 1; }
-  .card_integrante a h3 {
-    font-size: 0.9rem; }
+  .main_integrantes {
+    height: 2200px; }
+    .main_integrantes h1 {
+      font-size: 1 rem;
+      padding: 25px 5px; }
+  .card_integrante, .card_integrante_tom, .card_integrante_rick, .card_integrante_jack {
+    z-index: 1;
+    padding: 10px; }
+    .card_integrante a h3, .card_integrante_tom a h3, .card_integrante_rick a h3, .card_integrante_jack a h3 {
+      font-size: 0.9rem; }
   /*BIOGRAFIA INTEGRANTES*/
   .biografia_integrante h2 {
-    font-size: 1rem; }
+    font-size: 1.2rem;
+    margin: 50px 5px 10px 5px;
+    text-align: center;
+    font-weight: 600; }
   .biografia_integrante p {
     margin: 30px 5px;
-    font-size: 0.9rem; } }
+    font-size: 0.9rem;
+    text-align: justify; } }
 
 @media only screen and (min-width: 768px) {
-  .main_integrantes h1 {
-    font-size: 1.2 rem;
-    padding: 45px 10px; }
+  .main_integrantes {
+    height: 1800px; }
+    .main_integrantes h1 {
+      font-size: 1.2 rem;
+      padding: 45px 10px; }
   .contenedor_cards {
     display: flex;
     height: 350px;
     width: 100%;
     z-index: 1; }
-  .card_integrante a h3 {
+  .card_integrante a h3, .card_integrante_tom a h3, .card_integrante_rick a h3, .card_integrante_jack a h3 {
     font-size: 1rem; }
   /*BIOGRAFIA INTEGRANTES*/
   .biografia_integrante h2 {
-    font-size: 1.1rem; }
+    font-size: 2rem;
+    margin: 50px 5px 10px 5px;
+    text-align: center;
+    font-weight: 600; }
   .biografia_integrante p {
     margin: 30px 30px;
-    font-size: 1rem; } }
+    font-size: 1rem;
+    text-align: justify; } }
 
 @media only screen and (min-width: 1200px) {
-  .main_integrantes h1 {
-    font-size: 50px;
-    padding: 55px 20px;
-    font-weight: 500; }
-  .contenedor_cards {
-    height: 450px; }
-  .card_integrante {
-    height: 400px; }
-  .card_integrante a h3 {
-    font-size: 30px;
-    padding: 10px; }
+  .main_integrantes {
+    height: 2000px; }
+    .main_integrantes h1 {
+      font-size: 50px;
+      padding: 55px 20px;
+      font-weight: 500; }
   /*BIOGRAFIA INTEGRANTES*/
   .biografia_integrante h2 {
-    font-size: 40px; }
+    font-size: 2.5rem;
+    margin: 50px 5px 10px 5px;
+    text-align: center;
+    font-weight: 600; }
   .biografia_integrante p {
     margin: 40px 40px;
-    font-size: 30px; } }
+    font-size: 1rem;
+    text-align: justify; } }
 
 .img_portada {
   height: 85%; }
@@ -408,40 +398,44 @@ a {
   border-bottom: 1px solid black;
   position: sticky;
   top: 0px; }
-  .header .nav_header a.active, .header .nav_header .nav_header li a:hover {
-    background-color: rgba(0, 0, 0, 0.473);
-    transition: .5s; }
-  .header .nav_header .enlace_logo {
-    position: absolute; }
-  .header .nav_header ul li a {
-    font-family: "Roboto", sans-serif;
-    font-weight: 800;
-    color: black;
-    border-radius: 3px; }
+
+.nav_header .enlace_logo {
+  position: absolute; }
+
+.nav_header ul li a {
+  font-family: "Roboto", sans-serif;
+  font-weight: 800;
+  color: black;
+  border-radius: 3px; }
+
+.nav_header a.active, .nav_header li a:hover {
+  background-color: rgba(0, 0, 0, 0.473);
+  transition: .5s; }
 
 @media only screen and (max-width: 768px) {
   .header {
     height: 80px;
     z-index: 2; }
-    .header .nav_header .enlace_logo {
-      padding: 10px 10px; }
-      .header .nav_header .enlace_logo .logo {
-        height: 60px; }
-    .header .nav_header ul {
-      position: fixed;
-      width: 100%;
-      height: 100vh;
-      background: #d4e0f5;
-      top: 80px;
-      left: -100%;
-      text-align: center;
-      transition: all .5s; }
-      .header .nav_header ul li {
-        display: block;
-        margin: 50px;
-        line-height: 30px; }
-        .header .nav_header ul li a {
-          font-size: 15px; }
+  .nav_header .enlace_logo {
+    padding: 10px 10px; }
+    .nav_header .enlace_logo .logo {
+      height: 60px; }
+  .nav_header ul {
+    position: fixed;
+    width: 100%;
+    height: 100vh;
+    background: #d4e0f5;
+    top: 80px;
+    left: -100%;
+    text-align: center;
+    transition: all .5s;
+    overflow-y: scroll; }
+    .nav_header ul li {
+      display: block;
+      margin: 50px;
+      line-height: 30px; }
+      .nav_header ul li a {
+        font-size: 15px; }
   .checkbtn {
     display: block;
     font-size: 30px;
@@ -459,20 +453,20 @@ a {
   .header {
     height: 100px;
     z-index: 1; }
-    .header .nav_header .enlace_logo {
-      padding: 20px 20px; }
-      .header .nav_header .enlace_logo .logo {
-        height: 60px; }
-    .header .nav_header ul {
-      float: right;
-      margin-right: 15px; }
-      .header .nav_header ul li {
-        display: inline-block;
-        line-height: 100px;
-        margin: 0 5px; }
-        .header .nav_header ul li a {
-          font-size: 13px;
-          padding: 7px 3px; }
+  .nav_header .enlace_logo {
+    padding: 20px 20px; }
+    .nav_header .enlace_logo .logo {
+      height: 60px; }
+  .nav_header ul {
+    float: right;
+    margin-right: 15px; }
+    .nav_header ul li {
+      display: inline-block;
+      line-height: 100px;
+      margin: 0 5px; }
+      .nav_header ul li a {
+        font-size: 13px;
+        padding: 7px 3px; }
   .checkbtn {
     display: none; }
   #check {
@@ -483,67 +477,134 @@ a {
     font-size: 20px;
     padding: 7px 7px; } }
 
+.boton-enviar {
+  height: 40px;
+  min-width: 100px;
+  border-radius: 5px;
+  font-size: 1rem;
+  margin: 5px 5px;
+  padding-left: 20px;
+  padding-right: 20px;
+  cursor: pointer;
+  transition: 0.5s all ease-in-out;
+  color: white;
+  background: #198754;
+  border: 1px solid #198754; }
+  .boton-enviar:hover {
+    color: white;
+    background: #136840;
+    border: 1px solid #136840; }
+
+.boton-limpiar {
+  height: 40px;
+  min-width: 100px;
+  border-radius: 5px;
+  font-size: 1rem;
+  margin: 5px 5px;
+  padding-left: 20px;
+  padding-right: 20px;
+  cursor: pointer;
+  transition: 0.5s all ease-in-out;
+  color: white;
+  background: #6c757d;
+  border: 1px solid #6c757d; }
+  .boton-limpiar:hover {
+    color: white;
+    background: #656a6e;
+    border: 1px solid #656a6e; }
+
+.boton-masinfo-volver {
+  height: 40px;
+  min-width: 100px;
+  border-radius: 5px;
+  font-size: 1rem;
+  margin: 5px 5px;
+  padding-left: 20px;
+  padding-right: 20px;
+  cursor: pointer;
+  transition: 0.5s all ease-in-out;
+  color: white;
+  background: #0d6efd;
+  border: 1px solid #0d6efd; }
+  .boton-masinfo-volver:hover {
+    color: white;
+    background: #1f4e94;
+    border: 1px solid #1f4e94; }
+
+.card_integrante, .card_integrante_tom, .card_integrante_rick, .card_integrante_jack {
+  width: 100%;
+  height: 300px;
+  display: flex;
+  justify-content: center; }
+  .card_integrante a, .card_integrante_tom a, .card_integrante_rick a, .card_integrante_jack a {
+    text-align: center;
+    border-radius: 30px; }
+    .card_integrante a h3, .card_integrante_tom a h3, .card_integrante_rick a h3, .card_integrante_jack a h3 {
+      padding-top: 20px;
+      font-weight: 500;
+      letter-spacing: 7px; }
+  .card_integrante img, .card_integrante_tom img, .card_integrante_rick img, .card_integrante_jack img {
+    height: 80%;
+    border-top-left-radius: 30px;
+    border-top-right-radius: 30px; }
+
 .footer {
   width: 100%;
   background-color: black;
   display: flex;
   flex-direction: column; }
-
-.footer__contenedor {
-  display: flex;
-  align-items: center; }
-
-.footer__contenedor p {
-  color: white;
-  display: inline-block; }
-
-.footer__desarrolladores {
-  border-top: 0.2px solid white;
-  text-align: center; }
-
-.footer__desarrolladores p {
-  color: #e9af62;
-  margin: 5px; }
+  .footer__contenedor {
+    display: flex;
+    align-items: center; }
+    .footer__contenedor p {
+      color: white;
+      display: inline-block; }
+  .footer__desarrolladores {
+    border-top: 0.2px solid white;
+    text-align: center; }
+    .footer__desarrolladores p {
+      color: #e9af62;
+      margin: 5px; }
 
 @media only screen and (max-width: 768px) {
   .footer {
     height: 150px;
     align-items: center;
     justify-content: center; }
-  .footer__contenedor {
-    width: 100%;
-    flex-direction: column;
-    display: flex; }
-  .footer__contenedor p {
-    font-size: 14px;
-    margin: 0px;
-    padding-bottom: 10px; }
-  .footer__contenedor__redes i {
-    font-size: 20px; }
-  .footer__desarrolladores p {
-    font-size: 10px; } }
+    .footer__contenedor {
+      width: 100%;
+      flex-direction: column;
+      display: flex; }
+      .footer__contenedor p {
+        font-size: 14px;
+        margin: 0px;
+        padding-bottom: 10px; }
+      .footer__contenedor__redes i {
+        font-size: 20px; }
+    .footer__desarrolladores p {
+      font-size: 10px; } }
 
 @media only screen and (min-width: 768px) {
   .footer {
     height: 140px; }
-  .footer__contenedor {
-    flex-direction: row;
-    justify-content: space-around;
-    height: 70%; }
-  .footer__contenedor p {
-    font-size: 16px;
-    padding-top: 10px; }
-  .footer__contenedor__redes i {
-    font-size: 25px;
-    padding-left: 10px; }
-  .footer__desarrolladores p {
-    font-size: 12px; } }
+    .footer__contenedor {
+      flex-direction: row;
+      justify-content: space-around;
+      height: 70%; }
+      .footer__contenedor p {
+        font-size: 16px;
+        padding-top: 10px; }
+      .footer__contenedor__redes i {
+        font-size: 25px;
+        padding-left: 10px; }
+    .footer__desarrolladores p {
+      font-size: 12px; } }
 
 @media only screen and (min-width: 1200px) {
   .footer__contenedor p {
     font-size: 18px; }
   .footer__contenedor__redes i {
-    font-size: 27px;
+    font-size: 37px;
     padding-left: 12px; }
   .footer__desarrolladores p {
     font-size: 12px; } }
