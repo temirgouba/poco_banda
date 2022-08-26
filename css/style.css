@@ -5,149 +5,252 @@
   list-style: none; }
 
 body {
-  font-family: 'Roboto', sans-serif; }
-
-main {
-  background-color: #dd957b; }
+  font-family: 'Roboto', sans-serif;
+  background: #dd957b; }
 
 a {
   text-decoration: none; }
 
-.main {
+.main-home {
   width: 100%;
-  background-color: #dd957b; }
+  height: 100%; }
+
+/*CAROUSEL*/
+.carousel-titulo {
+  background: rgba(0, 0, 0, 0.404); }
+
+.carousel-parrafo {
+  background: rgba(0, 0, 0, 0.404); }
+
+/*PRESENTACION INICIO*/
+.presentacion-inicio {
+  background: url(../../imagenes/bg-banda-inicio.jpg);
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-blend-mode: darken;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center; }
+  .presentacion-inicio .titulo-presentacion {
+    font-weight: 500;
+    color: white;
+    text-align: center; }
+  .presentacion-inicio .parrafo-presentacion {
+    font-weight: 200;
+    color: white;
+    text-align: center; }
 
 /*DISCO TRIBUTO*/
-.disco-tributo {
+.contenido-inicio {
+  height: 100%;
+  width: 100%;
   display: flex;
-  align-items: center; }
-
-.contenido-tributo {
-  color: black;
+  margin-top: 40px;
+  margin-bottom: 40px;
+  flex-direction: column;
   text-align: center; }
+  .contenido-inicio h {
+    text-align: center; }
+  .contenido-inicio .contenido-inicio-1 {
+    color: black;
+    text-align: center;
+    width: 100%;
+    display: flex;
+    justify-content: space-around;
+    align-items: center; }
+    .contenido-inicio .contenido-inicio-1 p {
+      text-align: justify; }
+  .contenido-inicio .contenido-inicio-2 {
+    width: 100%;
+    display: flex;
+    flex-direction: row-reverse;
+    justify-content: space-around;
+    align-items: center; }
+    .contenido-inicio .contenido-inicio-2 p {
+      text-align: justify; }
 
-.contenido-tributo p {
-  text-align: justify; }
+.enlace_interno_inicio {
+  position: relative; }
 
-/*DISCO FECHA RECITAL*/
-.fecha-recital {
-  display: flex;
-  height: 500px;
-  justify-content: space-around;
-  align-items: center; }
-
-.contenido-fecha {
-  color: black;
-  text-align: center; }
-
-.contenido-fecha h2 {
-  margin-bottom: 1rem;
-  font-size: 1.5rem; }
+.anchor-inicio {
+  position: absolute;
+  top: -115px;
+  left: 0px; }
 
 /*VIDEO DE YOU TUBE*/
-.video-youtube {
-  height: 100%;
-  width: 100%; }
-
 .contenedor-video-youtube {
-  height: 400px;
-  width: 90%;
-  margin: 50px 10px 30px 30px; }
+  display: flex;
+  width: 100%;
+  justify-content: center;
+  align-items: center;
+  padding: 5%, 5%, 5%, 5%; }
+  .contenedor-video-youtube .video-youtube {
+    width: 90%;
+    height: 90%; }
 
-@media only screen and (max-width: 768px) {
-  /*MAIN*/
-  .main {
-    padding: 10px 10px 10px 10px; }
+@media only screen and (max-width: 576px) {
+  .carousel img {
+    height: 300px; }
+  .carousel-titulo {
+    font-size: 16px; }
+  .carousel-parrafo {
+    font-size: 12px; }
+  .presentacion-inicio {
+    height: 300px; }
+    .presentacion-inicio .titulo-presentacion {
+      font-size: 16px;
+      letter-spacing: 3px; }
+    .presentacion-inicio .parrafo-presentacion {
+      font-size: 12px;
+      letter-spacing: 1px; }
   /*DISCO TRIBUTO*/
-  .disco-tributo {
-    height: 850px;
-    flex-direction: column-reverse;
-    justify-content: space-around; }
-  .imagen-tributo {
-    padding: 10px 0px 20px 0px;
-    width: 95%;
-    height: 70%; }
-  .contenido-tributo {
+  .contenido-inicio h {
     font-size: 16px; }
-  .contenido-tributo h2 {
-    margin-bottom: 1.5rem;
-    font-size: 1.5rem;
-    text-align: center; }
-  .contenido-tributo p {
-    margin-top: 1.5rem;
-    margin-bottom: 30px;
-    font-size: 1rem; }
-  /*DISCO FECHA RECITAL*/
-  .fecha-recital {
-    flex-direction: column-reverse;
-    margin-top: 70px; }
-  .imagen-recital {
-    padding: 10px 0px 20px 0px;
-    width: 95%;
-    height: 70%; }
-  .contenido-fecha {
+  .contenido-inicio .contenido-inicio-1 {
+    height: 220px; }
+  .contenido-inicio p {
+    width: 45%;
+    font-size: 12px; }
+  .contenido-inicio img {
+    width: 40%;
+    height: 70%;
+    border-radius: 80px; }
+  .contenido-inicio .contenido-inicio-2 {
+    height: 220px; }
+    .contenido-inicio .contenido-inicio-2 p {
+      width: 45%;
+      font-size: 12px; }
+    .contenido-inicio .contenido-inicio-2 img {
+      width: 40%;
+      height: 70%;
+      border-radius: 50px; }
+  .contenedor-video-youtube {
+    height: 300px; } }
+
+@media only screen and (min-width: 576px) {
+  .carousel img {
+    height: 400px; }
+  .carousel-titulo {
+    font-size: 20px; }
+  .carousel-parrafo {
     font-size: 16px; }
-  .contenido-fecha p {
-    margin-bottom: 30px;
-    font-size: 1rem; } }
+  .presentacion-inicio {
+    height: 400px; }
+    .presentacion-inicio .titulo-presentacion {
+      font-size: 20px;
+      letter-spacing: 5px; }
+    .presentacion-inicio .parrafo-presentacion {
+      font-size: 16px;
+      letter-spacing: 3px; }
+  /*DISCO TRIBUTO*/
+  .contenido-inicio h {
+    font-size: 20px; }
+  .contenido-inicio .contenido-inicio-1 {
+    height: 250px;
+    width: 100%;
+    margin-top: 10px;
+    margin-bottom: 10px; }
+    .contenido-inicio .contenido-inicio-1 p {
+      width: 45%;
+      font-size: 16px; }
+    .contenido-inicio .contenido-inicio-1 img {
+      width: 40%;
+      height: 70%;
+      border-radius: 80px; }
+  .contenido-inicio .contenido-inicio-2 {
+    height: 300px;
+    width: 100%;
+    display: flex;
+    margin-top: 10px;
+    margin-bottom: 10px; }
+    .contenido-inicio .contenido-inicio-2 p {
+      width: 45%;
+      font-size: 16px; }
+    .contenido-inicio .contenido-inicio-2 img {
+      width: 40%;
+      height: 70%;
+      border-radius: 50px; }
+  .contenedor-video-youtube {
+    height: 400px; } }
 
 @media only screen and (min-width: 768px) {
-  /*MAIN*/
-  .main {
-    width: 100%;
-    height: 1600px;
-    background-color: #dd957b; }
+  .carousel img {
+    height: 500px; }
+  .carousel-titulo {
+    font-size: 24px; }
+  .carousel-parrafo {
+    font-size: 18px; }
+  .presentacion-inicio {
+    height: 500px; }
+    .presentacion-inicio .titulo-presentacion {
+      font-size: 24px;
+      letter-spacing: 7px; }
+    .presentacion-inicio .parrafo-presentacion {
+      font-size: 18px;
+      letter-spacing: 5px; }
   /*DISCO TRIBUTO*/
-  .disco-tributo {
-    height: 600px;
-    width: 100%;
-    justify-content: space-evenly;
-    padding: 0em 1em; }
-  .imagen-tributo {
-    width: 40%; }
-  .contenido-tributo {
-    font-size: 1rem;
-    width: 45%; }
-  .contenido-tributo p {
-    padding-top: 1em; }
-  /*DISCO FECHA RECITAL*/
-  .fecha-recital {
-    width: 100%;
-    flex-direction: row-reverse; }
-  .imagen-recital {
-    width: 40%; }
-  .contenido-fecha {
-    font-size: 1rem;
-    width: 45%; }
-  .contenido-fecha p {
-    text-align: justify;
-    padding-top: 1em; } }
-
-@media only screen and (min-width: 1200px) {
-  /*MAIN*/
-  .main {
-    height: 1800px; }
-  /*DISCO TRIBUTO*/
-  .disco-tributo {
-    height: 600px; }
-  .imagen-tributo {
-    width: 45%; }
-  .contenido-tributo {
-    font-size: 1.2rem;
-    width: 42%; }
-  /*DISCO FECHA RECITAL*/
-  .imagen-recital {
-    width: 42%; }
-  .contenido-fecha {
-    font-size: 1.2rem;
-    width: 45%; }
-  /*VIDEO DE YOU TUBE*/
-  .video-youtube {
-    height: 100%;
-    width: 100%; }
+  .contenido-inicio h {
+    font-size: 24px; }
+  .contenido-inicio .contenido-inicio-1 {
+    height: 300px; }
+    .contenido-inicio .contenido-inicio-1 p {
+      width: 45%;
+      font-size: 18px; }
+    .contenido-inicio .contenido-inicio-1 img {
+      width: 40%;
+      height: 80%;
+      border-radius: 90px; }
+  .contenido-inicio .contenido-inicio-2 {
+    height: 300px; }
+    .contenido-inicio .contenido-inicio-2 p {
+      width: 45%;
+      font-size: 18px; }
+    .contenido-inicio .contenido-inicio-2 img {
+      width: 40%;
+      height: 70%;
+      border-radius: 65px; }
   .contenedor-video-youtube {
-    height: 600px;
-    width: 95%; } }
+    height: 450px; } }
+
+@media only screen and (min-width: 992px) {
+  .carousel img {
+    height: 600px; }
+  .carousel-titulo {
+    font-size: 26px; }
+  .carousel-parrafo {
+    font-size: 20px; }
+  .presentacion-inicio {
+    height: 600px; }
+    .presentacion-inicio .titulo-presentacion {
+      font-size: 26px;
+      letter-spacing: 8px; }
+    .presentacion-inicio .parrafo-presentacion {
+      font-size: 20px;
+      letter-spacing: 6px; }
+  /*DISCO TRIBUTO*/
+  .contenido-inicio h {
+    font-size: 26px; }
+  .contenido-inicio .contenido-inicio-1 {
+    height: 300px; }
+    .contenido-inicio .contenido-inicio-1 p {
+      width: 45%;
+      font-size: 20px; }
+    .contenido-inicio .contenido-inicio-1 img {
+      width: 40%;
+      height: 80%;
+      border-radius: 100px; }
+  .contenido-inicio .contenido-inicio-2 {
+    height: 300px; }
+    .contenido-inicio .contenido-inicio-2 p {
+      width: 45%;
+      font-size: 20px; }
+    .contenido-inicio .contenido-inicio-2 img {
+      width: 40%;
+      height: 80%;
+      border-radius: 80px; }
+  .contenedor-video-youtube {
+    height: 500px; } }
 
 .main_integrantes {
   width: 100%;
@@ -459,7 +562,9 @@ a {
       height: 60px; }
   .nav_header ul {
     float: right;
-    margin-right: 15px; }
+    margin-right: 15px;
+    padding-bottom: 0;
+    margin-bottom: 0; }
     .nav_header ul li {
       display: inline-block;
       line-height: 100px;
@@ -478,58 +583,371 @@ a {
     padding: 7px 7px; } }
 
 .boton-enviar {
-  height: 40px;
-  min-width: 100px;
   border-radius: 5px;
-  font-size: 1rem;
   margin: 5px 5px;
-  padding-left: 20px;
-  padding-right: 20px;
   cursor: pointer;
   transition: 0.5s all ease-in-out;
   color: white;
   background: #198754;
-  border: 1px solid #198754; }
+  border: 1px solid #198754;
+  width: 100px;
+  height: 40px;
+  font-size: 1rem;
+  padding-left: 20px;
+  padding-right: 20px; }
   .boton-enviar:hover {
     color: white;
     background: #136840;
     border: 1px solid #136840; }
 
 .boton-limpiar {
-  height: 40px;
-  min-width: 100px;
   border-radius: 5px;
-  font-size: 1rem;
   margin: 5px 5px;
-  padding-left: 20px;
-  padding-right: 20px;
   cursor: pointer;
   transition: 0.5s all ease-in-out;
   color: white;
   background: #6c757d;
-  border: 1px solid #6c757d; }
+  border: 1px solid #6c757d;
+  width: 100px;
+  height: 40px;
+  font-size: 1rem;
+  padding-left: 20px;
+  padding-right: 20px; }
   .boton-limpiar:hover {
     color: white;
     background: #656a6e;
     border: 1px solid #656a6e; }
 
 .boton-masinfo-volver {
-  height: 40px;
-  min-width: 100px;
   border-radius: 5px;
-  font-size: 1rem;
   margin: 5px 5px;
-  padding-left: 20px;
-  padding-right: 20px;
   cursor: pointer;
   transition: 0.5s all ease-in-out;
   color: white;
   background: #0d6efd;
-  border: 1px solid #0d6efd; }
+  border: 1px solid #0d6efd;
+  width: 100px;
+  height: 40px;
+  font-size: 1rem;
+  padding-left: 20px;
+  padding-right: 20px; }
   .boton-masinfo-volver:hover {
     color: white;
     background: #1f4e94;
     border: 1px solid #1f4e94; }
+
+.boton-comprar {
+  border-radius: 5px;
+  margin: 5px 5px;
+  cursor: pointer;
+  transition: 0.5s all ease-in-out;
+  color: white;
+  background: white;
+  border: 1px solid white;
+  width: 100px;
+  height: 40px;
+  font-size: 1rem;
+  padding-left: 20px;
+  padding-right: 20px;
+  color: black; }
+  .boton-comprar:hover {
+    color: white;
+    background: #c7c7c7;
+    border: 1px solid #c7c7c7; }
+  .boton-comprar:hover {
+    color: black; }
+
+@media only screen and (max-width: 576px) {
+  .boton-enviar {
+    border-radius: 5px;
+    margin: 5px 5px;
+    cursor: pointer;
+    transition: 0.5s all ease-in-out;
+    color: white;
+    background: #198754;
+    border: 1px solid #198754;
+    width: 60px;
+    height: 20px;
+    font-size: 12px;
+    padding-left: 5px;
+    padding-right: 5px; }
+    .boton-enviar:hover {
+      color: white;
+      background: #136840;
+      border: 1px solid #136840; }
+  .boton-limpiar {
+    border-radius: 5px;
+    margin: 5px 5px;
+    cursor: pointer;
+    transition: 0.5s all ease-in-out;
+    color: white;
+    background: #6c757d;
+    border: 1px solid #6c757d;
+    width: 60px;
+    height: 20px;
+    font-size: 12px;
+    padding-left: 5px;
+    padding-right: 5px; }
+    .boton-limpiar:hover {
+      color: white;
+      background: #656a6e;
+      border: 1px solid #656a6e; }
+  .boton-masinfo-volver {
+    border-radius: 5px;
+    margin: 5px 5px;
+    cursor: pointer;
+    transition: 0.5s all ease-in-out;
+    color: white;
+    background: #0d6efd;
+    border: 1px solid #0d6efd;
+    width: 60px;
+    height: 20px;
+    font-size: 12px;
+    padding-left: 5px;
+    padding-right: 5px; }
+    .boton-masinfo-volver:hover {
+      color: white;
+      background: #1f4e94;
+      border: 1px solid #1f4e94; }
+  .boton-comprar {
+    border-radius: 5px;
+    margin: 5px 5px;
+    cursor: pointer;
+    transition: 0.5s all ease-in-out;
+    color: white;
+    background: white;
+    border: 1px solid white;
+    width: 60px;
+    height: 20px;
+    font-size: 12px;
+    padding-left: 5px;
+    padding-right: 5px;
+    color: black; }
+    .boton-comprar:hover {
+      color: white;
+      background: #c7c7c7;
+      border: 1px solid #c7c7c7; }
+    .boton-comprar:hover {
+      color: black; } }
+
+@media only screen and (min-width: 576px) {
+  .boton-enviar {
+    border-radius: 5px;
+    margin: 5px 5px;
+    cursor: pointer;
+    transition: 0.5s all ease-in-out;
+    color: white;
+    background: #198754;
+    border: 1px solid #198754;
+    width: 90px;
+    height: 30px;
+    font-size: 14px;
+    padding-left: 10px;
+    padding-right: 10px; }
+    .boton-enviar:hover {
+      color: white;
+      background: #136840;
+      border: 1px solid #136840; }
+  .boton-limpiar {
+    border-radius: 5px;
+    margin: 5px 5px;
+    cursor: pointer;
+    transition: 0.5s all ease-in-out;
+    color: white;
+    background: #6c757d;
+    border: 1px solid #6c757d;
+    width: 90px;
+    height: 30px;
+    font-size: 14px;
+    padding-left: 10px;
+    padding-right: 10px; }
+    .boton-limpiar:hover {
+      color: white;
+      background: #656a6e;
+      border: 1px solid #656a6e; }
+  .boton-masinfo-volver {
+    border-radius: 5px;
+    margin: 5px 5px;
+    cursor: pointer;
+    transition: 0.5s all ease-in-out;
+    color: white;
+    background: #0d6efd;
+    border: 1px solid #0d6efd;
+    width: 90px;
+    height: 30px;
+    font-size: 14px;
+    padding-left: 10px;
+    padding-right: 10px; }
+    .boton-masinfo-volver:hover {
+      color: white;
+      background: #1f4e94;
+      border: 1px solid #1f4e94; }
+  .boton-comprar {
+    border-radius: 5px;
+    margin: 5px 5px;
+    cursor: pointer;
+    transition: 0.5s all ease-in-out;
+    color: white;
+    background: white;
+    border: 1px solid white;
+    width: 90px;
+    height: 30px;
+    font-size: 14px;
+    padding-left: 10px;
+    padding-right: 10px;
+    color: black; }
+    .boton-comprar:hover {
+      color: white;
+      background: #c7c7c7;
+      border: 1px solid #c7c7c7; }
+    .boton-comprar:hover {
+      color: black; } }
+
+@media only screen and (min-width: 768px) {
+  .boton-enviar {
+    border-radius: 5px;
+    margin: 5px 5px;
+    cursor: pointer;
+    transition: 0.5s all ease-in-out;
+    color: white;
+    background: #198754;
+    border: 1px solid #198754;
+    width: 100px;
+    height: 40px;
+    font-size: 1rem;
+    padding-left: 20px;
+    padding-right: 20px; }
+    .boton-enviar:hover {
+      color: white;
+      background: #136840;
+      border: 1px solid #136840; }
+  .boton-limpiar {
+    border-radius: 5px;
+    margin: 5px 5px;
+    cursor: pointer;
+    transition: 0.5s all ease-in-out;
+    color: white;
+    background: #6c757d;
+    border: 1px solid #6c757d;
+    width: 100px;
+    height: 40px;
+    font-size: 1rem;
+    padding-left: 20px;
+    padding-right: 20px; }
+    .boton-limpiar:hover {
+      color: white;
+      background: #656a6e;
+      border: 1px solid #656a6e; }
+  .boton-masinfo-volver {
+    border-radius: 5px;
+    margin: 5px 5px;
+    cursor: pointer;
+    transition: 0.5s all ease-in-out;
+    color: white;
+    background: #0d6efd;
+    border: 1px solid #0d6efd;
+    width: 100px;
+    height: 40px;
+    font-size: 1rem;
+    padding-left: 20px;
+    padding-right: 20px; }
+    .boton-masinfo-volver:hover {
+      color: white;
+      background: #1f4e94;
+      border: 1px solid #1f4e94; }
+  .boton-comprar {
+    border-radius: 5px;
+    margin: 5px 5px;
+    cursor: pointer;
+    transition: 0.5s all ease-in-out;
+    color: white;
+    background: white;
+    border: 1px solid white;
+    width: 100px;
+    height: 40px;
+    font-size: 1rem;
+    padding-left: 20px;
+    padding-right: 20px;
+    color: black; }
+    .boton-comprar:hover {
+      color: white;
+      background: #c7c7c7;
+      border: 1px solid #c7c7c7; }
+    .boton-comprar:hover {
+      color: black; } }
+
+@media only screen and (min-width: 992px) {
+  .boton-enviar {
+    border-radius: 5px;
+    margin: 5px 5px;
+    cursor: pointer;
+    transition: 0.5s all ease-in-out;
+    color: white;
+    background: #198754;
+    border: 1px solid #198754;
+    width: 120px;
+    height: 50px;
+    font-size: 1.1rem;
+    padding-left: 25px;
+    padding-right: 25px; }
+    .boton-enviar:hover {
+      color: white;
+      background: #136840;
+      border: 1px solid #136840; }
+  .boton-limpiar {
+    border-radius: 5px;
+    margin: 5px 5px;
+    cursor: pointer;
+    transition: 0.5s all ease-in-out;
+    color: white;
+    background: #6c757d;
+    border: 1px solid #6c757d;
+    width: 120px;
+    height: 50px;
+    font-size: 1.1rem;
+    padding-left: 25px;
+    padding-right: 25px; }
+    .boton-limpiar:hover {
+      color: white;
+      background: #656a6e;
+      border: 1px solid #656a6e; }
+  .boton-masinfo-volver {
+    border-radius: 5px;
+    margin: 5px 5px;
+    cursor: pointer;
+    transition: 0.5s all ease-in-out;
+    color: white;
+    background: #0d6efd;
+    border: 1px solid #0d6efd;
+    width: 120px;
+    height: 50px;
+    font-size: 1.1rem;
+    padding-left: 25px;
+    padding-right: 25px; }
+    .boton-masinfo-volver:hover {
+      color: white;
+      background: #1f4e94;
+      border: 1px solid #1f4e94; }
+  .boton-comprar {
+    border-radius: 5px;
+    margin: 5px 5px;
+    cursor: pointer;
+    transition: 0.5s all ease-in-out;
+    color: white;
+    background: white;
+    border: 1px solid white;
+    width: 120px;
+    height: 50px;
+    font-size: 1.1rem;
+    padding-left: 25px;
+    padding-right: 25px;
+    color: black; }
+    .boton-comprar:hover {
+      color: white;
+      background: #c7c7c7;
+      border: 1px solid #c7c7c7; }
+    .boton-comprar:hover {
+      color: black; } }
 
 .card_integrante, .card_integrante_tom, .card_integrante_rick, .card_integrante_jack {
   width: 100%;

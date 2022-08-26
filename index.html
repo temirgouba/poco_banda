@@ -45,36 +45,113 @@
 
 <!--MAIN-->
 
-     <main class="main">
+<main class="main-home">
+
+    <!-- Carousel INICIO-->
+
+    <div id="carouselExample" class="carousel carousel slide" data-bs-ride="carousel">
+        <div class="carousel-indicators">
+          <button type="button" data-bs-target="#carouselExample" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+          <button type="button" data-bs-target="#carouselExample" data-bs-slide-to="1" aria-label="Slide 2"></button>
+          <button type="button" data-bs-target="#carouselExample" data-bs-slide-to="2" aria-label="Slide 3"></button>
+        </div>
+
+       
+        <!-- vista 1 DISCO TRIBUTO-->
+        <div class="carousel-inner">
+          <div class="carousel-item active" data-bs-interval="4000">
+            <img src="imagenes/disco-tributo.jpg" class="d-block w-100" alt="...">
+            <div class="carousel-caption d-None">
+              <h5 class="carousel-titulo">¡Ya salio el nuevo disco tributo a Rusty Young!</h5>
+              <p class="carousel-parrafo">"My Friend: A Tribute to Rusty Young" celebra y destaca el legado de Rusty Young.</p>
+              <a href="#info_disco"><button class="boton-masinfo-volver">+ info </button></a>
+              <a href="https://blueelan.com/collections/rusty-young/products/my-friend-a-tribute-to-rusty-young-cd-crazy-love-postcard-set" target="_blank"><button class="boton-comprar"> Comprar</button></a>
+            </div>
+          </div>
+
+           <!-- vista 2 FECHA RECITAL-->
+          <div class="carousel-item" data-bs-interval="2000">
+            <img src="imagenes/bandaactual.jpg" class="d-block w-100" alt="...">
+            <div class="carousel-caption d-None">
+              <h5 class="carousel-titulo">¡¡¡Preparate Steelville MO!!!</h5>
+              <p class="carousel-parrafo">El proximo 8 de Octubre de 2022, vamos a tocar en el bello escenario de The Widwood, en Steelville MO.</p>
+              <a href="#info_steelville"><button class="boton-masinfo-volver"> + info</button></a>
+              <a href="https://wildwoodspringssales.com/concerts/2016-concert-series/poconut-reunion-oct-8-2022/" target="_blank"><button class="boton-comprar"> Comprar</button></a>
+            </div>
+          </div>
+
+           <!-- vista 3 PAGINA OFICIAL USA-->
+          <div class="carousel-item">
+            <img src="imagenes/sitio-usa.png" class="d-block w-100" alt="...">
+            <div class="carousel-caption d-None">
+              <h5 class="carousel-titulo">Poco Band Oficial<h5>
+              <p class="carousel-parrafo">Sitio oficial de la banda en ingles</p>
+              <a href="https://pocoband.com/home" target="_blank"><button class="boton-masinfo-volver"> Ir al sitio</button></a>
+            </div>
+          </div>
+        </div>
+        <button class="carousel-control-prev" type="button" data-bs-target="#carouselExample" data-bs-slide="prev">
+          <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+          <span class="visually-hidden">Previous</span>
+        </button>
+        <button class="carousel-control-next" type="button" data-bs-target="#carouselExample" data-bs-slide="next">
+          <span class="carousel-control-next-icon" aria-hidden="true"></span>
+          <span class="visually-hidden">Next</span>
+        </button>
+      </div>
+
+
+      <!--PRESENTACION INICIO-->
+
+      <div class="presentacion-inicio" style="background-image: url(./imagenes/bg-banda-inicio.jpg);">
+        <h2 class="titulo-presentacion">POCO BANDA</h2>
+        <p class="parrafo-presentacion">La pagina en español de la banda. </p>
+        <p class="parrafo-presentacion">Durante más de 50 años, sus distintivas armonías y su musicalidad estelar ayudaron a definir el sonido del country-rock. Todavía dirigidos por el cofundador de la banda y multi-instrumentista que escribió y cantó sus mayores éxitos, son una unidad dedicada de cuatro formidables compositores, vocalistas, arreglistas y músicos.</p>
+      </div>
 
 <!--DISCO TRIBUTO-->
 
-    <div class="disco-tributo">       
+    <div class="contenido-inicio">
+      
+      <div class="container enlace_interno_inicio">
+        <h2 class="title">Ya salio el nuevo disco tributo a Rusty Young</h2>
+        <a class="anchor-inicio" name="info_disco"></a>
+    </div>
            
-        <div class="contenido-tributo">
-        <h2>¡Ya salio el nuevo disco tributo a Rusty Young! </a></h2>
-        <p>"My Friend: A Tribute to Rusty Young" celebra y destaca el legado de Rusty Young, el difunto cofundador de la banda de country-rock Poco. Los planes para un álbum tributo ya estaban en marcha antes de que Young falleciera repentinamente el 14 de abril de 2021. Desafortunadamente, Young nunca pudo escuchar las interpretaciones de sus canciones icónicas que fueron grabadas por este talentoso grupo de artistas. Como comenta Kirk Pasich, fundador de Blue Élan y productor del álbum en las notas del álbum: “A partir de 2017, Rusty fue, en muchos sentidos, el corazón y el alma de nuestro sello”.</p>
-        <a href="https://blueelan.com/collections/rusty-young/products/my-friend-a-tribute-to-rusty-young-cd-crazy-love-postcard-set" target="_blank"><button class="boton-masinfo-volver"> Más información</button></a>
-        </div>
-        
+      <div class="contenido-inicio-1">
+        <p>"My Friend: A Tribute to Rusty Young" celebra y destaca el legado de Rusty Young, el difunto cofundador de la banda de country-rock Poco. Los planes para un álbum tributo ya estaban en marcha antes de que Young falleciera repentinamente el 14 de abril de 2021.</p>
+        <img src="imagenes/rusty-tributo.jpg" alt="Foto de Rusty Young de perfil">
+      </div>
+
+      <div class="contenido-inicio-2">
+        <p>Desafortunadamente, Young nunca pudo escuchar las interpretaciones de sus canciones icónicas que fueron grabadas por este talentoso grupo de artistas. Como comenta Kirk Pasich, fundador de Blue Élan y productor del álbum en las notas del álbum: “A partir de 2017, Rusty fue, en muchos sentidos, el corazón y el alma de nuestro sello”.</p>
         <img class="imagen-tributo" src="imagenes/tributoarustyyoung.jpg" alt="imagen de la tapa del disco tributo a Rusty Young">
+      </div>
+      <a href="https://blueelan.com/collections/rusty-young/products/my-friend-a-tribute-to-rusty-young-cd-crazy-love-postcard-set" target="_blank"><button class="boton-comprar"> Comprar</button></a>
+             
     </div>
 
 <!--fecha recital-->
 
-        <div class="fecha-recital">       
-
-                
-            <div class="contenido-fecha">
-            <h2>¡¡¡Preparate Steelville MO!!! </a></h2>
-            <p>El proximo 8 de Octubre de 2022, vamos a tocar en el bello escenario de The Widwood, en Steelville MO.</p>
-            <a href="https://wildwoodspringssales.com/concerts/2016-concert-series/poconut-reunion-oct-8-2022/" target="_blank"><button class="boton-masinfo-volver"> Más información</button></a>
-            </div>
+      <div class="contenido-inicio">
             
-            <img class="imagen-recital" src="imagenes/bandaactual.jpg" alt="imagen de la tapa de disco">
+        <div class="container enlace_interno_inicio">
+          <h2 class="title">¡¡¡Preparate Steelville MO!!!</h2>
+          <a class="anchor-inicio" name="info_steelville"></a>
+      </div>
+            
+        <div class="contenido-inicio-1">
+          <p>El 8 de octubre, los miembros de la alineación final de Poco se reunirán para tocar canciones seleccionadas de una carrera de 53 años, para recordar y celebrar el legado que Poco creó junto con los fanáticos que hicieron la peregrinación anual a Wildwood.</p>
+          <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d12580.467416090198!2d-91.368160997585!3d37.97440218107181!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x87dbd2abec85755d%3A0x57ae3aabeb8b105d!2sWildwood%20Springs%20Resort!5e0!3m2!1ses!2sar!4v1661461263124!5m2!1ses!2sar" width="40%" height="70%" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
         </div>
 
-
+        <div class="contenido-inicio-2">
+          <p>Es una continuación de una tradición para que los fanáticos puedan continuar con su amor por la música y su amor mutuo. Jack Sundrud, Rick Lonow, Tom Hampton, Miguel Kelsh, Miguel Webb y Jorge Grantham van a estar esperandote para pasar una noche legendaria.</p>
+          <img class="imagen-tributo" src="imagenes/img-recital.jpg" alt="">
+        </div>
+        <a href="https://wildwoodspringssales.com/concerts/2016-concert-series/poconut-reunion-oct-8-2022/" target="_blank"><button class="boton-comprar"> Comprar</button></a>
+              
+      </div>
 
 <!--video de YOU TUBE-->
 

@@ -1,11 +1,6 @@
-@mixin botones( $bt-fondo, $bt-hov-fondo){
-    height: 40px;
-    min-width: 100px;
+@mixin botones( $bt-fondo, $bt-hov-fondo, $tamanio){
     border-radius: 5px;
-    font-size: 1rem;
     margin: 5px 5px;
-    padding-left: 20px;
-    padding-right: 20px;
     cursor: pointer;
     transition: 0.5s all ease-in-out;
     color: white;
@@ -16,19 +11,166 @@
         background: $bt-hov-fondo;
         border: 1px solid $bt-hov-fondo;
     }
+
+    
+// media N "none" max-width 576px
+    @if $tamanio == "none"{
+        width: 60px;
+        height: 20px;
+        font-size: 12px;
+        padding-left: 5px;
+        padding-right: 5px;
+        }
+// media S "small" min-width 576px
+    @else if $tamanio == "small"{
+        width: 90px;
+        height: 30px;
+        font-size: 14px;
+        padding-left: 10px;
+        padding-right: 10px;
+        }
+// media M "medium" min-width 768px
+    @else if $tamanio == "medium"{
+        width: 100px;
+        height: 40px;
+        font-size: 1rem;
+        padding-left: 20px;
+        padding-right: 20px;
+        }
+// media L "large" min-width 992px
+    @else if $tamanio == "large"{
+        width: 120px;
+        height: 50px;
+        font-size: 1.1rem;
+        padding-left: 25px;
+        padding-right: 25px;
+        }
+
+    @if $tamanio == "default"{
+        width: 100px;
+        height: 40px;
+        font-size: 1rem;
+        padding-left: 20px;
+        padding-right: 20px;
+        }
+
 }
 
 .boton-enviar{
-    @include botones( #198754, #136840)
+    @include botones( #198754, #136840, default);
 }
 
 .boton-limpiar{
-    @include botones( #6c757d, #656a6e)
+    @include botones( #6c757d, #656a6e, default);
 }
-
-
 
 .boton-masinfo-volver{
-    @include botones( #0d6efd, #1f4e94);
+    @include botones( #0d6efd, #1f4e94, default);
 }
 
+.boton-comprar{
+    @include botones( white, rgb(199, 199, 199), default);
+    color: black;
+    &:hover{
+        color: black;
+    }
+}
+
+// media N ("none")
+@media only screen and (max-width:576px){
+
+    .boton-enviar{
+        @include botones( #198754, #136840, none);
+    }
+    
+    .boton-limpiar{
+        @include botones( #6c757d, #656a6e, none);
+    }
+    
+    .boton-masinfo-volver{
+        @include botones( #0d6efd, #1f4e94, none);
+    }
+
+    .boton-comprar{
+        @include botones( white, rgb(199, 199, 199), none);
+        color: black;
+        &:hover{
+        color: black;
+    }
+
+    }
+}
+
+
+// media S ("small")
+@media only screen and (min-width:576px){
+
+    .boton-enviar{
+        @include botones( #198754, #136840, small);
+    }
+    
+    .boton-limpiar{
+        @include botones( #6c757d, #656a6e, small);
+    }
+    
+    .boton-masinfo-volver{
+        @include botones( #0d6efd, #1f4e94, small);
+    }
+
+    .boton-comprar{
+        @include botones( white, rgb(199, 199, 199), small);
+        color: black;
+        &:hover{
+        color: black;
+        }
+    }
+}
+
+// media M ("medium")
+@media only screen and (min-width:768px){
+
+    .boton-enviar{
+        @include botones( #198754, #136840, medium);
+    }
+    
+    .boton-limpiar{
+        @include botones( #6c757d, #656a6e, medium);
+    }
+    
+    .boton-masinfo-volver{
+        @include botones( #0d6efd, #1f4e94, medium);
+    }
+
+    .boton-comprar{
+        @include botones( white, rgb(199, 199, 199), medium);
+        color: black;
+        &:hover{
+        color: black;
+        }
+    }
+}
+
+
+// media L ("large")
+@media only screen and (min-width:992px){
+
+    .boton-enviar{
+        @include botones( #198754, #136840, large);
+    }
+    
+    .boton-limpiar{
+        @include botones( #6c757d, #656a6e, large);
+    }
+    
+    .boton-masinfo-volver{
+        @include botones( #0d6efd, #1f4e94, large);
+    }
+
+    .boton-comprar{
+        @include botones( white, rgb(199, 199, 199), large);
+        color: black;
+        &:hover{
+        color: black;
+        }
+    }
+}

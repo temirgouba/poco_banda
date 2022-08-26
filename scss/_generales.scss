@@ -7,10 +7,9 @@
 
 body{
     font-family: 'Roboto', sans-serif;
+    background: $color-fondo-body;
 }
-main{
-    background-color: $color-fondo-body;
-}
+
 
 a{
     text-decoration: none;

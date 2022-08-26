@@ -1,232 +1,447 @@
-.main{
+.main-home{
     width: 100%;
-    background-color: $color-fondo-body;
+    height: 100%; 
 }
 
+
+/*CAROUSEL*/
+
+
+.carousel-titulo{
+    background: rgba(0, 0, 0, 0.404);
+}
+
+.carousel-parrafo{
+    background: rgba(0, 0, 0, 0.404);
+}
+
+/*PRESENTACION INICIO*/
+.presentacion-inicio{
+    background: url(../../imagenes/bg-banda-inicio.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-blend-mode: darken;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    .titulo-presentacion{
+        font-weight: 500;
+        color: white;
+        text-align: center;
+    }
+    .parrafo-presentacion{
+        font-weight: 200;
+        color: white;
+        text-align: center;
+    }
+}
+
+
+   
 /*DISCO TRIBUTO*/
 
 
-.disco-tributo{
-    display: flex;
-    align-items: center;
-}
-
-.contenido-tributo{
-    color: black;
-    text-align: center;
-}
-
-.contenido-tributo p{
-    text-align: justify;
-}
-
-
-
-/*DISCO FECHA RECITAL*/
-
-.fecha-recital{
-    display: flex;
-    height: 500px;
-    justify-content: space-around;
-    align-items: center;
-}
-
-.contenido-fecha{
-    color: black;
-    text-align: center;
-}
-
-.contenido-fecha h2{
-    margin-bottom: 1rem;
-    font-size: 1.5rem;
-}
-
-/*VIDEO DE YOU TUBE*/
-
-.video-youtube{
+.contenido-inicio{
     height: 100%;
     width: 100%;
-}
+    display: flex;
+    margin-top: 40px;
+    margin-bottom: 40px;
+    flex-direction: column;
+    text-align: center;
 
-.contenedor-video-youtube{
-    height: 400px;
-    width: 90%;
-    margin: 50px 10px 30px 30px;
-}
-
-@media only screen and (max-width:768px){
-
-    /*MAIN*/
-
-    .main{
-        padding: 10px 10px 10px 10px;
-    }
-
-/*DISCO TRIBUTO*/
-
-    .disco-tributo{
-        height: 850px;
-        flex-direction: column-reverse;
-        justify-content: space-around;
-    }
-
-    .imagen-tributo{
-        padding: 10px 0px 20px 0px;
-        width: 95%;
-        height: 70%;
-    }
-
-    .contenido-tributo{
-        font-size: 16px;
-    }
-
-    .contenido-tributo h2{
-        margin-bottom: 1.5rem;
-        font-size: 1.5rem;
+    h{
         text-align: center;
     }
 
-    .contenido-tributo p{
-        margin-top: 1.5rem;
-        margin-bottom: 30px;
-        font-size: 1rem;
+    
+
+    .contenido-inicio-1{
+        color: black;
+        text-align: center;
+        width: 100%;
+        display: flex;
+        justify-content: space-around;
+        align-items: center;
+
+        p{
+            text-align: justify;          
+        }
     }
 
-/*DISCO FECHA RECITAL*/
+    .contenido-inicio-2{
+        width: 100%;
+        display: flex;
+        flex-direction: row-reverse;
+        justify-content: space-around;
+        align-items: center;
+        p{
+            text-align: justify;
+        }
 
-.fecha-recital{
-    flex-direction: column-reverse;
-    margin-top: 70px;
+    }
 }
 
-.imagen-recital{
-    padding: 10px 0px 20px 0px;
-    width: 95%;
-    height: 70%;
+.enlace_interno_inicio{
+    position: relative;
 }
 
-.contenido-fecha{
+.anchor-inicio{
+    position: absolute;
+    top: -115px;
+    left: 0px;
+}
+
+
+/*VIDEO DE YOU TUBE*/
+
+
+
+.contenedor-video-youtube{
+    display: flex;
+    width: 100%;
+    justify-content: center;
+    align-items: center;
+    padding: 5%, 5%, 5%, 5%;
+
+    .video-youtube{
+        width: 90%;
+        height: 90%;
+        
+    }
+}
+
+@media only screen and (max-width:576px){
+
+
+// carousel
+
+    .carousel{
+
+        img{
+        height: 300px;
+        }
+    }
+
+    .carousel-titulo{
+        font-size: 16px;
+    }
+
+    .carousel-parrafo{
+        font-size: 12px;
+    }
+// fin carousel
+
+// presentacion inicio
+
+    .presentacion-inicio{
+
+        height: 300px;
+        .titulo-presentacion{
+            font-size: 16px;
+            letter-spacing: 3px;
+        }
+        .parrafo-presentacion{
+            font-size: 12px;
+            letter-spacing: 1px;
+        }
+    }
+
+
+/*DISCO TRIBUTO*/
+
+
+    .contenido-inicio{     
+        
+        h{
+            font-size: 16px;          
+        }
+
+        .contenido-inicio-1{
+            height: 220px;
+        }
+ 
+            p{
+                width: 45%;
+                font-size: 12px;                            
+            }
+
+            img{
+                width: 40%;
+                height: 70%;
+                border-radius: 80px;
+            }
+        
+            .contenido-inicio-2{
+                height: 220px;
+    
+                p{
+                    width: 45%;
+                    font-size: 12px;                 
+                }
+
+                img{
+                    width: 40%;
+                    height: 70%;
+                    border-radius: 50px;
+                }
+        }
+    }
+
+    .contenedor-video-youtube{
+        height: 300px;
+    }
+}
+
+
+@media only screen and (min-width:576px){
+    
+// carousel
+
+.carousel{
+
+    img{
+    height: 400px;
+    }
+}
+
+.carousel-titulo{
+    font-size: 20px;
+}
+
+.carousel-parrafo{
     font-size: 16px;
 }
+// fin carousel
 
+// presentacion inicio
 
+.presentacion-inicio{
 
-.contenido-fecha p{
-    margin-bottom: 30px;
-    font-size: 1rem;
+    height: 400px;
+    .titulo-presentacion{
+        font-size: 20px;
+        letter-spacing: 5px;
+    }
+    .parrafo-presentacion{
+        font-size: 16px;
+        letter-spacing: 3px;
+    }
 }
 
+/*DISCO TRIBUTO*/
+
+
+.contenido-inicio{
+
+    h{
+        font-size: 20px;
+    }
+
+    .contenido-inicio-1{
+        height: 250px;
+        width: 100%;
+        margin-top: 10px;
+        margin-bottom: 10px;
+
+        p{
+            width: 45%;
+            font-size: 16px;          
+            
+        }
+        img{
+            width: 40%;
+            height: 70%;
+            border-radius: 80px;
+        }
+    }
+
+        .contenido-inicio-2{
+            height: 300px;
+            width: 100%;
+            display: flex;
+            margin-top: 10px;
+            margin-bottom: 10px;
+
+            p{
+                width: 45%;
+                font-size: 16px;
+            }
+
+            img{
+                width: 40%;
+                height: 70%;
+                border-radius: 50px;
+            }
+        }
+    }
+
+    .contenedor-video-youtube{
+        height: 400px;
+    }
 
 }
 
 @media only screen and (min-width:768px){
 
-    /*MAIN*/
+// carousel
 
-.main{
-    width: 100%;
-    height: 1600px;
-    background-color: $color-fondo-body;
+.carousel{
+
+    img{
+    height: 500px;
     }
+}
+
+.carousel-titulo{
+    font-size: 24px;
+}
+
+.carousel-parrafo{
+    font-size: 18px;
+}
+// fin carousel
+
+// presentacion inicio
+
+.presentacion-inicio{
+
+    height: 500px;
+    .titulo-presentacion{
+        font-size: 24px;
+        letter-spacing: 7px;
+    }
+    .parrafo-presentacion{
+        font-size: 18px;
+        letter-spacing: 5px;
+    }
+}
 
 /*DISCO TRIBUTO*/
 
-.disco-tributo{
-    height: 600px;
-    width: 100%;
-    justify-content: space-evenly;
-    padding: 0em 1em;
-}
 
-.imagen-tributo{
-    width: 40%;
+.contenido-inicio{
 
-}
-
-.contenido-tributo{
-    font-size: 1rem;
-    width: 45%;
-}
-
-
-.contenido-tributo p{
-    padding-top: 1em;
-
-}
-
-/*DISCO FECHA RECITAL*/
-
-.fecha-recital{
-    width: 100%;
-    flex-direction: row-reverse;
-}
-
-.imagen-recital{
-    width: 40%;
-
-}
-
-.contenido-fecha{
-    font-size: 1rem;
-    width: 45%
-}
-
-.contenido-fecha p{
-    text-align: justify;
-    padding-top: 1em;
-}
-
-}
-
-@media only screen and (min-width:1200px){
-
-    /*MAIN*/
-
-.main{
-    height: 1800px;
+    h{
+        font-size: 24px;
     }
 
-/*DISCO TRIBUTO*/
-
-    .disco-tributo{
-        height: 600px;
-
-    }
+    .contenido-inicio-1{
+        height: 300px;
     
-    .imagen-tributo{
-        width: 45%;
-    
-    }
-    
-    .contenido-tributo{
-        font-size: 1.2rem;
-        width: 42%;
-    }
- 
-  
-    /*DISCO FECHA RECITAL*/
+
+        p{
+            width: 45%;
+            font-size: 18px;
+        }      
         
-    .imagen-recital{
-        width: 42%;
-    
-    }
-    
-    .contenido-fecha{
-        font-size: 1.2rem;
-        width: 45%
+        img{
+            width: 40%;
+            height: 80%;
+            border-radius: 90px;
+        }
     }
 
-/*VIDEO DE YOU TUBE*/
+        .contenido-inicio-2{
+            height: 300px;
 
-.video-youtube{
-    height: 100%;
-    width: 100%;
+            p{
+                width: 45%;
+                font-size: 18px;
+            }
+
+            img{
+                width: 40%;
+                height: 70%;
+                border-radius: 65px;
+            }
+        }
     }
-    
+
     .contenedor-video-youtube{
-    height: 600px;
-    width: 95%;
+        height: 450px;
     }
 
 }
 
+@media only screen and (min-width:992px){
+
+
+// carousel
+
+.carousel{
+
+    img{
+    height: 600px;
+    }
+}
+
+.carousel-titulo{
+    font-size: 26px;
+}
+
+.carousel-parrafo{
+    font-size: 20px;
+}
+// fin carousel
+
+// presentacion inicio
+
+.presentacion-inicio{
+
+    height: 600px;
+    .titulo-presentacion{
+        font-size: 26px;
+        letter-spacing: 8px;
+    }
+    .parrafo-presentacion{
+        font-size: 20px;
+        letter-spacing: 6px;
+    }
+}
+
+/*DISCO TRIBUTO*/
+
+
+.contenido-inicio{
+
+    h{
+        font-size: 26px;
+    }
+
+    .contenido-inicio-1{
+        height: 300px;
+
+        p{
+            width: 45%;
+            font-size: 20px;           
+        }
+
+        img{
+            width: 40%;
+            height: 80%;
+            border-radius: 100px;
+        }
+    }
+
+        .contenido-inicio-2{
+            height: 300px;
+
+            p{
+                width: 45%;
+                font-size: 20px;
+            }
+
+            img{
+                width: 40%;
+                height: 80%;
+                border-radius: 80px;
+            }
+        }
+    }
+
+    .contenedor-video-youtube{
+        height: 500px;
+    }
+}
