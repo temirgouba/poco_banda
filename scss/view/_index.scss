@@ -3,10 +3,7 @@
     height: 100%; 
 }
 
-
 /*CAROUSEL*/
-
-
 .carousel-titulo{
     background: rgba(0, 0, 0, 0.404);
 }
@@ -17,94 +14,82 @@
 
 /*PRESENTACION INICIO*/
 .presentacion-inicio{
-    background: url(../../imagenes/bg-banda-inicio.jpg);
-    background-size: cover;
+    background-size: 100% 100%;
     background-repeat: no-repeat;
-    background-blend-mode: darken;
     width: 100%;
     display: flex;
     flex-direction: column;
-    justify-content: center;
+    align-items: center;
+    justify-content: space-evenly;
+    img{
+        width: 25%;
+        height: 40%;
+    }
     .titulo-presentacion{
-        font-weight: 500;
         color: white;
         text-align: center;
     }
     .parrafo-presentacion{
-        font-weight: 200;
         color: white;
-        text-align: center;
+         text-align: justify;       
     }
 }
-
-
-   
-/*DISCO TRIBUTO*/
-
-
-.contenido-inicio{
+  
+.contenido-fecha{
     height: 100%;
     width: 100%;
     display: flex;
     margin-top: 40px;
     margin-bottom: 40px;
-    flex-direction: column;
-    text-align: center;
-
-    h{
+    box-shadow: rgba(0, 0, 0, 0.35) 0px -50px 36px -28px inset;
+    h2{
         text-align: center;
-    }
-
-    
-
-    .contenido-inicio-1{
+    }   
+    .contenido-fecha-1{
         color: black;
         text-align: center;
         width: 100%;
         display: flex;
-        justify-content: space-around;
-        align-items: center;
-
         p{
             text-align: justify;          
         }
+        iframe{
+            width: 70%;
+            height: 100%;
+            padding-bottom: 20px;
+        }
     }
-
-    .contenido-inicio-2{
+    .contenido-fecha-2{
         width: 100%;
         display: flex;
-        flex-direction: row-reverse;
-        justify-content: space-around;
-        align-items: center;
         p{
             text-align: justify;
         }
-
+        img{
+            width: 70%;
+            height: 100%;
+            padding-bottom: 20px;
+        }
     }
 }
-
+// error de position sticky
 .enlace_interno_inicio{
     position: relative;
 }
 
 .anchor-inicio{
     position: absolute;
-    top: -115px;
+    top: -100px;
     left: 0px;
 }
 
 
 /*VIDEO DE YOU TUBE*/
-
-
-
 .contenedor-video-youtube{
     display: flex;
     width: 100%;
     justify-content: center;
     align-items: center;
-    padding: 5%, 5%, 5%, 5%;
-
     .video-youtube{
         width: 90%;
         height: 90%;
@@ -115,10 +100,8 @@
 @media only screen and (max-width:576px){
 
 
-// carousel
-
+    // carousel
     .carousel{
-
         img{
         height: 300px;
         }
@@ -131,61 +114,44 @@
     .carousel-parrafo{
         font-size: 12px;
     }
-// fin carousel
 
-// presentacion inicio
-
+    // presentacion inicio
     .presentacion-inicio{
-
-        height: 300px;
+        height: 330px;
         .titulo-presentacion{
-            font-size: 16px;
             letter-spacing: 3px;
         }
         .parrafo-presentacion{
-            font-size: 12px;
             letter-spacing: 1px;
+            padding-left: 10px;
+            padding-right: 10px;
         }
     }
 
-
-/*DISCO TRIBUTO*/
-
-
-    .contenido-inicio{     
-        
-        h{
-            font-size: 16px;          
+    // fecha recital
+    .contenido-fecha{
+        flex-direction: column;
+        text-align: center; 
+        h2{
+            padding-bottom: 10px;
         }
-
-        .contenido-inicio-1{
-            height: 220px;
-        }
- 
+        a{
+            padding-bottom: 40px;
+        }          
+        .contenido-fecha-1{
+            flex-direction: column;
+            align-items: center;
             p{
-                width: 45%;
-                font-size: 12px;                            
+                padding: 10px;         
             }
-
-            img{
-                width: 40%;
-                height: 70%;
-                border-radius: 80px;
-            }
-        
-            .contenido-inicio-2{
-                height: 220px;
-    
-                p{
-                    width: 45%;
-                    font-size: 12px;                 
-                }
-
-                img{
-                    width: 40%;
-                    height: 70%;
-                    border-radius: 50px;
-                }
+        }  
+        .contenido-fecha-2{
+            width: 100%;
+            flex-direction: column;
+            align-items: center;
+            p{
+                padding: 10px;
+            }             
         }
     }
 
@@ -197,83 +163,57 @@
 
 @media only screen and (min-width:576px){
     
-// carousel
-
-.carousel{
-
-    img{
-    height: 400px;
-    }
-}
-
-.carousel-titulo{
-    font-size: 20px;
-}
-
-.carousel-parrafo{
-    font-size: 16px;
-}
-// fin carousel
-
-// presentacion inicio
-
-.presentacion-inicio{
-
-    height: 400px;
-    .titulo-presentacion{
-        font-size: 20px;
-        letter-spacing: 5px;
-    }
-    .parrafo-presentacion{
-        font-size: 16px;
-        letter-spacing: 3px;
-    }
-}
-
-/*DISCO TRIBUTO*/
-
-
-.contenido-inicio{
-
-    h{
-        font-size: 20px;
-    }
-
-    .contenido-inicio-1{
-        height: 250px;
-        width: 100%;
-        margin-top: 10px;
-        margin-bottom: 10px;
-
-        p{
-            width: 45%;
-            font-size: 16px;          
-            
-        }
+    // carousel
+    .carousel{
         img{
-            width: 40%;
-            height: 70%;
-            border-radius: 80px;
+        height: 400px;
         }
     }
 
-        .contenido-inicio-2{
-            height: 300px;
-            width: 100%;
-            display: flex;
-            margin-top: 10px;
-            margin-bottom: 10px;
+    .carousel-titulo{
+        font-size: 20px;
+    }
 
+    .carousel-parrafo{
+        font-size: 16px;
+    }
+
+    // presentacion inicio
+    .presentacion-inicio{
+        height: 450px;
+        .titulo-presentacion{
+            letter-spacing: 5px;
+        }
+        .parrafo-presentacion{
+            letter-spacing: 3px;
+            padding-left: 12px;
+            padding-right: 12px;
+        }
+    }
+
+    // fecha recital
+    .contenido-fecha{
+        flex-direction: column;
+        text-align: center;
+        h2{
+            padding-bottom: 30px;
+        }
+        a{
+            padding-bottom: 45px;
+        }   
+        .contenido-fecha-1{
+            flex-direction: column-reverse;
+            align-items: center;
             p{
-                width: 45%;
-                font-size: 16px;
+                padding: 12px;         
             }
-
-            img{
-                width: 40%;
-                height: 70%;
-                border-radius: 50px;
-            }
+        }
+        .contenido-fecha-2{
+            flex-direction: column-reverse;
+            align-items: center;
+            p{
+                padding: 12px;
+            }     
         }
     }
 
@@ -285,76 +225,76 @@
 
 @media only screen and (min-width:768px){
 
-// carousel
-
-.carousel{
-
-    img{
-    height: 500px;
-    }
-}
-
-.carousel-titulo{
-    font-size: 24px;
-}
-
-.carousel-parrafo{
-    font-size: 18px;
-}
-// fin carousel
-
-// presentacion inicio
-
-.presentacion-inicio{
-
-    height: 500px;
-    .titulo-presentacion{
-        font-size: 24px;
-        letter-spacing: 7px;
-    }
-    .parrafo-presentacion{
-        font-size: 18px;
-        letter-spacing: 5px;
-    }
-}
-
-/*DISCO TRIBUTO*/
-
-
-.contenido-inicio{
-
-    h{
-        font-size: 24px;
-    }
-
-    .contenido-inicio-1{
-        height: 300px;
-    
-
-        p{
-            width: 45%;
-            font-size: 18px;
-        }      
-        
+    // carousel
+    .carousel{
         img{
-            width: 40%;
-            height: 80%;
-            border-radius: 90px;
+        height: 500px;
         }
     }
 
-        .contenido-inicio-2{
-            height: 300px;
+    .carousel-titulo{
+        font-size: 24px;
+    }
 
+    .carousel-parrafo{
+        font-size: 18px;
+    }
+
+    // presentacion inicio
+    .presentacion-inicio{
+        height: 550px;
+        .titulo-presentacion{
+            letter-spacing: 7px;
+        }
+        .parrafo-presentacion{
+            letter-spacing: 5px;
+            padding-left: 15px;
+            padding-right: 15px;
+        }
+    }
+
+    // fecha recital
+    .contenido-fecha{
+        height: 100%;
+        width: 100%;
+        flex-direction: column;
+        text-align: center;
+        h2{
+            padding-top: 30px;
+        }
+        a{
+            padding-bottom: 45px;
+        } 
+        .contenido-fecha-1{
+            width: 100%;
+            height: 45%;
+            flex-direction: row;
+            align-items: center;
+            justify-content: space-evenly;
+            padding-bottom: 30px;
             p{
-                width: 45%;
-                font-size: 18px;
+                width: 50%;
+                padding: 20px;         
             }
-
+            iframe{
+                width: 40%;
+                height: 80%;
+            }
+        }
+       .contenido-fecha-2{
+            width: 100%;
+            height: 45%;
+            flex-direction: row-reverse;
+            align-items: center;
+            justify-content: space-evenly;
+            padding-bottom: 30px;
+            p{
+                width: 50%;
+                padding: 20px;
+            }     
             img{
                 width: 40%;
-                height: 70%;
-                border-radius: 65px;
+                height: 60%;
             }
         }
     }
@@ -368,75 +308,33 @@
 @media only screen and (min-width:992px){
 
 
-// carousel
-
-.carousel{
-
-    img{
-    height: 600px;
-    }
-}
-
-.carousel-titulo{
-    font-size: 26px;
-}
-
-.carousel-parrafo{
-    font-size: 20px;
-}
-// fin carousel
-
-// presentacion inicio
-
-.presentacion-inicio{
-
-    height: 600px;
-    .titulo-presentacion{
-        font-size: 26px;
-        letter-spacing: 8px;
-    }
-    .parrafo-presentacion{
-        font-size: 20px;
-        letter-spacing: 6px;
-    }
-}
-
-/*DISCO TRIBUTO*/
-
-
-.contenido-inicio{
-
-    h{
-        font-size: 26px;
-    }
-
-    .contenido-inicio-1{
-        height: 300px;
-
-        p{
-            width: 45%;
-            font-size: 20px;           
-        }
-
+    // carousel
+    .carousel{
         img{
-            width: 40%;
-            height: 80%;
-            border-radius: 100px;
+        height: 600px;
         }
     }
 
-        .contenido-inicio-2{
-            height: 300px;
+    .carousel-titulo{
+        font-size: 26px;
+    }
 
-            p{
-                width: 45%;
-                font-size: 20px;
+    .carousel-parrafo{
+        font-size: 20px;
+    }
+
+    // presentacion inicio
+    .presentacion-inicio{
+
+        .presentacion-inicio{
+            height: 650px;
+            .titulo-presentacion{
+                letter-spacing: 8px;
             }
-
-            img{
-                width: 40%;
-                height: 80%;
-                border-radius: 80px;
+            .parrafo-presentacion{
+                letter-spacing: 6px;
+                padding-left: 20px;
+                padding-right: 20px;
             }
         }
     }

@@ -1,3 +1,7 @@
+//mixing bonotes
+// $bt-fondo > se espera un color de fondo del boton
+// $bt-hov-fondo > se espera un color de fondo del boton en estado hover
+// $tamanio > se espera un tamaño para el boton
 @mixin botones( $bt-fondo, $bt-hov-fondo, $tamanio){
     border-radius: 5px;
     margin: 5px 5px;

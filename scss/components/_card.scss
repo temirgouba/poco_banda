@@ -2,8 +2,7 @@
     width: 100%;
     height: 300px;
     display: flex;
-    justify-content: center;   
-
+    justify-content: center; 
     a{
         text-align: center;
         border-radius: 30px;
@@ -13,10 +12,90 @@
             letter-spacing: 7px;          
         }
     }
-
     img{
         height: 80%;
         border-top-left-radius: 30px;
         border-top-right-radius: 30px; 
     }
+}
+
+.card_integrante_tom{
+    @extend .card_integrante;
+    a{
+      color:black;
+      background: white;
+      img{
+        width: 216px;
+      }
+    }
+}
+
+.card_integrante_rick{
+    @extend .card_integrante;
+    a{
+      color:rgb(173, 14, 14);
+      background: rgb(170, 170, 165);  
+    }
+}
+
+.card_integrante_jack{
+    @extend .card_integrante;
+    a{
+      color:white;
+      background: black;  
+    }
+}
+
+@media only screen and (max-width:576px){
+    .contenedor_cards{
+        padding-top: 50px;
+        padding-bottom: 50px;
+    }
+
+
+    .card_integrante{
+        z-index: 1;
+        padding: 10px;
+        a h3{
+            font-size: 0.7rem;
+        }
+    }
+}
+
+@media only screen and (min-width:576px){
+    .contenedor_cards{
+        padding-top: 60px;
+        padding-bottom: 60px;
+    }
+
+
+    .card_integrante{
+        z-index: 1;
+        padding: 15px;
+        a h3{
+            font-size: 0.9rem;
+        }
+    }
+}
+
+@media only screen and (min-width:768px){
+    .contenedor_cards{
+        display: flex;
+        height: 350px;
+        width: 100%;
+        z-index: 0;
+        padding-top: 60px;
+        margin-bottom: 60px;
+    }
+
+    .card_integrante a h3{
+        font-size: 1rem;
+    }
+}
+
+@media only screen and (min-width:992px){
+    .contenedor_cards{
+        padding-top: 70px;
+        margin-bottom: 70px;
+    }   
 }

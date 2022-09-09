@@ -1,0 +1,97 @@
+// parametros generales presentacion
+
+.presentacion-general{
+    width: 100%;
+    background-size: 100% 100%;
+    background-repeat: no-repeat;
+    box-shadow: rgba(17, 17, 26, 0.1) 0px 3px 0px;
+    &-titulo{
+        text-align: center;       
+    }
+}
+
+@media only screen and (max-width:576px){
+    .presentacion-general{
+        height: 200px;
+         &-titulo{
+            letter-spacing: 2px;
+            padding-top: 170px;
+        }
+    }
+
+}
+
+@media only screen and (min-width:576px){
+    .presentacion-general{
+        height: 250px;
+         &-titulo{
+            letter-spacing: 3px;
+            padding-top: 210px;
+        }
+    }
+
+}
+
+@media only screen and (min-width:768px){
+    .presentacion-general{
+        height: 300px;
+         &-titulo{
+            letter-spacing: 5px;
+            padding-top: 255px;
+        }
+    }
+}
+
+@media only screen and (min-width:992px){
+    .presentacion-general{
+        height: 350px;
+         &-titulo{
+            letter-spacing: 7px;
+            padding-top: 300px;
+        }
+    }
+}
+
+
+
+
+//animacion presentacio
+
+#animacion-presentacion{
+    animation-name: animacion-presentacion-fondo;
+    animation-duration: 5s;
+    animation-timing-function: linear;
+}
+
+@keyframes animacion-presentacion-fondo{
+    0%{
+        background: white;
+        color: rgb(51, 3, 3);
+    }
+    20%{
+        background: rgba(255, 255, 255, 0.801);
+        color: rgb(218, 16, 16);
+        letter-spacing: 5px;
+    }
+    40%{
+        background: rgba(255, 255, 255, 0.61);
+        color: rgb(177, 11, 11);
+        letter-spacing: 10px;
+    }
+    60%{
+        background: rgba(255, 255, 255, 0.39);
+        color: rgb(138, 2, 2);
+        letter-spacing: 15px;
+    }
+    80%{
+        background: rgba(255, 255, 255, 0.199);
+        color: rgb(94, 5, 5);
+        letter-spacing: 10px;
+    }
+
+    100%{
+        background: rgba(255, 255, 255, 0);
+        color: black;
+        letter-spacing: 5px;
+    }
+}

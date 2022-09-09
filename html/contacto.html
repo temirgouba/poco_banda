@@ -1,160 +1,126 @@
 <!DOCTYPE html>
 <html lang="es">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Contacto - POCO BANDA</title>
-    <meta name="description" content="¡No dejes de escribirnos, queremos escucharte! ¿Tenes alguna duda, necesitas algo? Estamos por y para vos.">
-    <meta name="keywords" content=" Contacto Poco banda, mail Poco banda, ayuda Poco banda">
-    <script src="https://kit.fontawesome.com/7490753cb7.js" crossorigin="anonymous"></script>
-    <!-- CSS only -->
-<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-gH2yIJqKdNHPEq0n4Mqa/HGKIhSkIHeL5AyhkYV8i59U5AR6csBvApHHNl/vI1Bx" crossorigin="anonymous">
-    <link rel="stylesheet" href="../css/style.css">
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Contacto - POCO BANDA</title>
+        <meta name="description" content="¡No dejes de escribirnos, queremos escucharte! ¿Tenes alguna duda, necesitas algo? Estamos por y para vos.">
+        <meta name="keywords" content=" Contacto Poco banda, mail Poco banda, ayuda Poco banda">
+        <script src="https://kit.fontawesome.com/7490753cb7.js" crossorigin="anonymous"></script>
+        <!-- CSS only -->
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-gH2yIJqKdNHPEq0n4Mqa/HGKIhSkIHeL5AyhkYV8i59U5AR6csBvApHHNl/vI1Bx" crossorigin="anonymous">
+        <link rel="stylesheet" href="../css/style.css">
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet">
 
-</head>
-<body>
+    </head>
+    <body>
 
     <!--HEADER-->
 
-     <header class="header">
-        <nav class="nav_header">
-            <input type="checkbox" id="check">
-            <label for="check" class="checkbtn">
-                <i class="fa-solid fa-bars"></i>
-            </label>
-            <a href="../index.html" class="enlace_logo">
-                <img src="../imagenes/logopoco.jpg" alt="imagen del logo de poco banda" class="logo">
-             </a>
+        <header class="header">
+            <nav class="nav_header">
+                <input type="checkbox" id="check">
+                <label for="check" class="checkbtn">
+                    <i class="fa-solid fa-bars"></i>
+                </label>
+                <a href="../index.html" class="enlace_logo">
+                    <img src="../imagenes/logopoco.jpg" alt="imagen del logo de poco banda" class="logo">
+                </a>
 
-            <ul>
+                <ul>
                     <li><a href="../index.html">INICIO</a></li>
                     <li><a href="../html/integrantes.html">INTEGRANTES</a></li>
                     <li><a href="../html/discografia.html" >DISCOGRAFÍA</a></li>
                     <li><a href="../html/galeria.html">GALERIA</a></li>
-                    <li>
-                        
-                        <a class="active" href="../html/contacto.html">CONTACTO</a></li>
+                    <li><a class="active" href="../html/contacto.html">CONTACTO</a></li>
                 </ul>
-            </nav>
-         
-     </header>
+            </nav>        
+        </header>
 
-     <main class="main-contacto">
+        <main class="main-contacto">
 
-        <h1>CONTACTO:</h1>
+            <!--  Inicio PRESENTACION CONTACTO -->
+            <div class="presentacion-general" style="background-image: url(../fondos/bg-contacto_optimized.png);">
+                <h1 class="size-general-h presentacion-general-titulo" id="animacion-presentacion">CONTACTO</h1>       
+            </div>
 
-        <!--FORMULARIO DE CONTACTO-->
-
-        <form action="" method="">
-
-        <div class="div-contacto">
-
-            <div class="div-contacto__datos-personales">
-
-                <div class="row">
-                    <div class="col-12 col-md-8 col-xl-6">
-
-                        <label for="First name" class="form-label">Nombre</label>
-
-                      <input type="text" class="form-control" placeholder="Ingresa tu nombre" id="First name">
+            <!--FORMULARIO DE CONTACTO-->
+            <form action="" method="">
+                <div class="div-contacto">
+                    <div class="div-contacto__datos-personales">
+                        <div class="row">
+                            <div class="col-12 col-md-8 col-xl-6">
+                                <label for="First name" class="form-label">Nombre</label>
+                                <input type="text" class="form-control" placeholder="Ingresa tu nombre" id="First name">
+                            </div>
+                        </div>
+                        <form class="row g-3">
+                            <div class="col-12 col-md-8 col-xl-6 mt-4">
+                                <label for="inputEmail4" class="form-label">Email</label>
+                                <input type="email" class="form-control" placeholder="Ingresa tu e-mail" id="inputEmail4">
+                            </div>
+                            <div class="col-12 col-md-8 col-xl-6 mt-4">
+                                <label for="inputState" class="form-label">Genero</label>
+                                <select id="inputState" class="form-select">
+                                    <option selected>Seleccione el genero</option>
+                                    <option>Varon</option>
+                                    <option>Mujer</option>
+                                    <option>Otro</option>
+                                </select>
+                            </div>
+                        </form>
                     </div>
-                  </div>
+                    <div class="div-contacto__cuentanos">
 
+                        <!--CUENTANOS-->
+                        <Fieldset>
+                            <legend>CUENTANOS!</legend>
 
-            <form class="row g-3">
+                            <!--ENVIAR COMENTARIOS-->               
+                            <div class="form-floating">
+                                <textarea class="form-control" placeholder="Leave a comment here" id="floatingTextarea"></textarea>
+                                <label for="floatingTextarea">Comentarios</label>
+                            </div>
 
-                <div class="col-12 col-md-8 col-xl-6 mt-4">
-                    <label for="inputEmail4" class="form-label">Email</label>
-                    <input type="email" class="form-control" placeholder="Ingresa tu e-mail" id="inputEmail4">
+                            <!--RECIBIR NOVEDADES-->   
+                            <label for="acepto_novedades" class="acepto_novedades_parrafo">¿Deseas recibir novedades?</label>
+                            <input type="checkbox" id="acepto_novedades">    
+                        </Fieldset>
+                        <input type="submit" class="boton-enviar" value="Enviar">
+                        <input type="reset" class="boton-limpiar" value="Limpiar">
+                    </div>
                 </div>
-
-
-                <div class="col-12 col-md-8 col-xl-6 mt-4">
-                    <label for="inputState" class="form-label">Genero</label>
-                    <select id="inputState" class="form-select">
-                    <option selected>Seleccione el genero</option>
-                    <option>Varon</option>
-                    <option>Mujer</option>
-                    <option>Otro</option>
-                    </select>
-                </div>
-            </form>
-
-            </div>
-
-            <div class="div-contacto__cuentanos">
-
-
-
-                <!--CUENTANOS-->
-                <Fieldset>
-                    <legend>CUENTANOS!</legend>
-
-                <!--ENVIAR COMENTARIOS-->
-                
-                <div class="form-floating">
-                    <textarea class="form-control" placeholder="Leave a comment here" id="floatingTextarea"></textarea>
-                    <label for="floatingTextarea">Comentarios</label>
-                  </div>
-
-
-                <!--RECIBIR NOVEDADES-->   
-                    <label for="acepto_novedades" class="acepto_novedades_parrafo">¿Deseas recibir novedades?</label>
-                    <input type="checkbox" id="acepto_novedades">
-     
-
-                </Fieldset>
-            <input type="submit" class="boton-enviar" value="Enviar Formulario">
-            <input type="reset" class="boton-limpiar" value="Limpiar Formulario">
-            </form>
-
-            </div>
-
-        </div>
-
-     </main>
+            </form>                 
+        </main>
      
         
-<!--FOOTER-->
-        
-<footer class="footer">
-                    
-    <div class="footer__contenedor">
+        <!--FOOTER-->          
+        <footer class="footer">                      
+            <div class="footer__contenedor">
+                <div class="footer__contenedor__redes">
+                    <p>Mantente conectado:</p>
+                    <!--ENLACE FACEBOOK-->
+                    <a href="https://www.facebook.com/Poco2013" target="_blank"><i class="fa-brands fa-facebook"></i> </a>
+                    <!--ENLACE TWITTER-->
+                    <a href="https://twitter.com/pocorocks" target="_blank"><i class="fa-brands fa-twitter"></i></a>
+                    <!--ENLACE INSTAGRAM-->
+                    <a href="https://www.instagram.com/officialpocoband/?hl=es" target="_blank">
+                        <i class="fa-brands fa-instagram"></i>
+                    </a>
+                </div>
 
-        <div class="footer__contenedor__redes">
+                <div class="footer__contenedor__derechos">
+                    <p>Todos los derechos reservados <a href="https://pocoband.com/" target="_blank"> POCO BAND </a>.</p>
+                </div>
+            </div>
 
-            <p>Mantente conectado:</p>
-
-            <!--ENLACE FACEBOOK-->
-                <a href="https://www.facebook.com/Poco2013" target="_blank"><i class="fa-brands fa-facebook"></i> </a>
-            <!--ENLACE TWITTER-->
-                <a href="https://twitter.com/pocorocks" target="_blank"><i class="fa-brands fa-twitter"></i></a>
-            <!--ENLACE INSTAGRAM-->
-                <a href="https://www.instagram.com/officialpocoband/?hl=es" target="_blank"><i class="fa-brands fa-instagram"></i></a>
-
-        </div>
-
-        <div class="footer__contenedor__derechos">
-
-            <p>Todos los derechos reservados <a href="https://pocoband.com/" target="_blank"> POCO BAND </a>.</p>
-
-        </div>
-    </div>
-
-        <div class="footer__desarrolladores">
-
-            <p>Desarrollo Web: Temir Gouba - Tamara Veron - Maximiliano Torreblanca</p>
-
-            <p><a href="https://www.coderhouse.com/" target="_blank"> CODERHOUSE </a></p>
-
-        </div>
-
-    
-    
-</footer>
+            <div class="footer__desarrolladores">
+                <p>Desarrollo Web: Temir Gouba - Tamara Veron - Maximiliano Torreblanca</p>
+                <p><a href="https://www.coderhouse.com/" target="_blank"> CODERHOUSE </a></p>
+            </div>                                       
+        </footer>
     </body>
-    </html>
+</html>

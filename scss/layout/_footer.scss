@@ -3,21 +3,17 @@
     background-color: $color-fondo-footer;
     display: flex;
     flex-direction: column;
-
     &__contenedor{
         display: flex;
         align-items: center;
-
         p{
             color: white;
             display: inline-block;
         } 
     }
-
     &__desarrolladores{
         border-top: 0.2px solid white;
         text-align: center;
-
         p{
             color: rgb(233, 175, 98);
             margin: 5px;
@@ -28,75 +24,69 @@
 
 @media only screen and (max-width:768px){
 
-.footer{
-    height: 150px;
-    align-items: center;
-    justify-content: center;
-
-    &__contenedor{
-        width: 100%;
-        flex-direction: column;
-        display: flex;
-        p{
-            font-size: 14px;
-            margin: 0px;
-            padding-bottom: 10px;
+    .footer{
+        height: 150px;
+        align-items: center;
+        justify-content: center;
+        &__contenedor{
+            width: 100%;
+            flex-direction: column;
+            display: flex;
+            p{
+                font-size: 14px;
+                margin: 0px;
+                padding-bottom: 10px;
+            }
+            &__redes i{
+                font-size: 20px;
+            }    
         }
 
-        &__redes i{
-            font-size: 20px;
-        }    
+        &__desarrolladores p{
+            font-size: 10px;
+        }
     }
-
-    &__desarrolladores p{
-        font-size: 10px;
-    }
-}
 
 }
 
 @media only screen and (min-width:768px){
 
-.footer{ 
-    height: 140px;
-
-    &__contenedor{
-        flex-direction: row;
-        justify-content: space-around;
-        height: 70%;
-
-        p{
-            font-size: 16px;
-            padding-top: 10px;
+    .footer{ 
+        height: 140px;
+        &__contenedor{
+            flex-direction: row;
+            justify-content: space-around;
+            height: 70%;
+            p{
+                font-size: 16px;
+                padding-top: 10px;
+            }
+            &__redes i{
+                font-size: 25px;
+                padding-left: 10px;
+            }
         }
 
-        &__redes i{
-            font-size: 25px;
-            padding-left: 10px;
+        &__desarrolladores p{
+            font-size: 12px;
         }
-
     }
 
-    &__desarrolladores p{
+}
+
+@media only screen and (min-width:992px){
+
+    .footer__contenedor p{
+        font-size: 18px;
+    }
+
+    .footer__contenedor__redes i{
+        font-size: 37px;
+        padding-left: 12px;
+    }
+    
+    .footer__desarrolladores p{
         font-size: 12px;
     }
-}
-
-}
-
-@media only screen and (min-width:1200px){
-
-.footer__contenedor p{
-    font-size: 18px;
-}
-
-.footer__contenedor__redes i{
-    font-size: 37px;
-    padding-left: 12px;
-}
- 
-.footer__desarrolladores p{
-    font-size: 12px;
-}
     
 }

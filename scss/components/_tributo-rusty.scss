@@ -1,0 +1,135 @@
+//TRIBUTO A RUSTY YOUNG INDEX PAGE
+
+.contenido-tributo{
+    width: 100%;
+    height: 100%;
+    background-repeat: no-repeat;
+
+    h2{
+        color: black;
+        text-align: center;
+    }
+    p{
+        color: black;
+        text-align: justify;
+    }
+}
+
+@media only screen and (max-width:576px){
+    .contenido-tributo{
+        background-size: 200% 100%;
+        h2{
+            padding: 50px 50px 10px 30px;           
+        }
+        p{
+            padding: 1px 15% 1px 10%;          
+        }
+        &-img{
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            img{   
+                width: 50%;
+                height: 50%;
+                padding-top: 10px;
+            }
+        }
+        a{
+            padding-top: 20px;
+            padding-bottom: 30px;
+        }                 
+    }
+}
+
+
+
+@media only screen and (min-width:576px){
+    .contenido-tributo{
+        background-size: 200% 100%;
+        h2{
+            padding: 50px 50px 10px 30px;          
+        }
+        p{
+            padding: 1px 15% 1px 10%;           
+        }
+        &-img{
+            display: flex;
+            flex-direction: row;
+            justify-content: center;
+            align-items: center;
+            img{   
+                width: 40%;
+                height: 40%;
+                padding-top: 10px;
+                padding-right: 20px;
+                padding-bottom: 40px;
+            }
+        }
+    }  
+}
+
+@media only screen and (min-width:768px){
+
+    #grilla-tributo{
+        height: 800px;
+        width: 100%;
+        background-size: 100% 100%;
+        background-repeat: no-repeat;
+        display: grid;
+        grid-template-columns: 50% 50%;
+        grid-template-rows: 20% 20% 15% 20% 25%;
+        grid-template-areas: "tributoh tributoimg-btn"
+                             "tributop1 tributoimg-btn"
+                             "tributop2 tributoimg-btn"
+                             "tributop3 tributoimg-btn"
+                             "tributop4 tributoimg-btn";
+    }
+
+    #grilla-tributo-h{
+        grid-area: tributoh;
+        text-align: center;
+        padding-top: 20%;
+    }
+    #grilla-tributo-p1{
+        grid-area: tributop1;
+        padding-top: 10%;
+    }
+    #grilla-tributo-p2{
+        grid-area: tributop2;
+        padding-top: 5%;
+    }
+    #grilla-tributo-p3{
+        grid-area: tributop3;
+        padding-top: 5%;
+    }
+    #grilla-tributo-p4{
+        grid-area: tributop4;
+    }
+    #grilla-tributo-imgbtn{
+        grid-area: tributoimg-btn;
+    }
+
+    .tributo-parrafos{
+        text-align: justify;
+    }
+
+    .contenido-tributo-img{
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        img{
+            width: 300px;
+            height: 300px;   
+        }
+    }
+}
+
+@media only screen and (min-width:992px){
+    .contenido-tributo-img{
+        img{
+            width: 400px;
+            height: 400px;        
+        }
+    }  
+}
+

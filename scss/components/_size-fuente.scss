@@ -1,0 +1,128 @@
+//tamaños para titulos
+
+@mixin titulo-general($size-h){
+    font-weight: 800;
+
+    //media N "none" max-width 576px
+
+    @if $size-h == "h-none"{
+        font-size: 20px;
+        }
+
+    //media S "small" min-width 576px
+    @else if $size-h == "h-small"{
+        font-size: 22px;
+    }
+
+    //media M "medium" min-width 768px
+    @else if $size-h == "h-medium"{
+        font-size: 24px;
+    }
+
+    //media L "large" min-width 992px
+    @else if $size-h == "h-large"{
+        font-size: 26px;
+    }
+
+    //media D "default" min-width 576px
+    @else if $size-h == "h-default"{
+        font-size: 1rem;
+    }
+}
+
+.size-general-h{
+    @include titulo-general("h-default");
+}
+
+// media XS ("xsmall")
+@media only screen and (max-width:576px){
+    .size-general-h{
+        @include titulo-general("h-none");
+    }
+}
+
+// media S ("small")
+@media only screen and (min-width:576px){
+    .size-general-h{
+        @include titulo-general("h-small");
+    }
+}
+
+// media M ("medium")
+@media only screen and (min-width:768px){
+    .size-general-h{
+        @include titulo-general("h-medium");
+    }
+}
+
+// media L ("large")
+@media only screen and (min-width:992px){
+    .size-general-h{
+        @include titulo-general("h-large");
+    }
+}
+
+
+//tamaños para parrafos
+
+@mixin parrafo-general($size-p){
+    font-weight: 200;
+
+    //media N "none" max-width 576px
+
+    @if $size-p == "p-none"{
+        font-size: 12px;
+        }
+
+    //media S "small" min-width 576px
+    @else if $size-p == "p-small"{
+        font-size: 14px;
+    }
+
+    //media M "medium" min-width 768px
+    @else if $size-p == "p-medium"{
+        font-size: 16px;
+    }
+
+    //media L "large" min-width 992px
+    @else if $size-p == "p-large"{
+        font-size: 18px;
+    }
+
+    //media D "default" min-width 576px
+    @else if $size-p == "p-default"{
+        font-size: 0.5rem;
+    }
+}
+
+.size-general-p{
+    @include parrafo-general("p-default");
+}
+
+// media N ("none")
+@media only screen and (max-width:576px){
+    .size-general-p{
+        @include parrafo-general("p-none");
+    }
+}
+
+// media S ("small")
+@media only screen and (min-width:576px){
+    .size-general-p{
+        @include parrafo-general("p-small");
+    }
+}
+
+// media M ("medium")
+@media only screen and (min-width:768px){
+    .size-general-p{
+        @include parrafo-general("p-medium");
+    }
+}
+
+// media L ("large")
+@media only screen and (min-width:992px){
+    .size-general-p{
+        @include parrafo-general("p-large");
+    }
+}
